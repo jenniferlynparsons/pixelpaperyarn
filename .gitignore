@@ -13,7 +13,15 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# environment variables
+# Netlify
+.netlify/
+.env
+.env.local
+
+# OS
+.DS_Store
+.vscode/
+.idea/# environment variables
 .env
 .env.production
 
