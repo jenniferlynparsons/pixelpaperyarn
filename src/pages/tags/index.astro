@@ -13,6 +13,10 @@ posts.forEach((post) => {
 });
 
 const tags = Array.from(allTags).sort();
+
+function tagToSlug(tag: string): string {
+  return tag.toLowerCase().replace(/\s+/g, '-');
+}
 ---
 
 <BlogLayout title="Tags - Pixel Paper Yarn">
@@ -25,10 +29,10 @@ const tags = Array.from(allTags).sort();
       {tags.map((tag) => {
         const postCount = posts.filter((p) => p.data.tags?.includes(tag)).length;
         return (
-          <div class="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-teal-600 hover:text-white transition-colors cursor-pointer">
-            <span class="font-semibold">{tag}</span>
+          <a href={`/tags/${tagToSlug(tag)}`} class="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-teal-600 hover:text-white transition-colors cursor-pointer block">
+            <span class="font-semibold">#{tag}</span>
             <span class="text-sm ml-2">({postCount})</span>
-          </div>
+          </a>
         );
       })}
     </div>

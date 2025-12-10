@@ -3,26 +3,229 @@
 /* Custom global styles */
 @layer base {
   body {
-    @apply bg-white text-gray-900;
+    @apply text-gray-900;
+    font-family: "Noto Serif", serif;
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #21a8d1;
+    background-image: url('/assets/pexels-steve-1509534.jpg');
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
-  
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+  }
+
   h1 {
-    @apply text-4xl font-bold mb-4;
+    @apply text-4xl mb-4;
   }
-  
+
   h2 {
-    @apply text-3xl font-bold mb-3;
+    @apply text-3xl mb-3;
   }
-  
+
   h3 {
-    @apply text-2xl font-bold mb-2;
+    @apply text-2xl mb-2;
   }
-  
+
   a {
     @apply text-blue-600 hover:text-blue-800 transition-colors;
   }
-  
+
   p {
     @apply mb-4 leading-relaxed;
   }
+
+  code, pre {
+    font-family: Inconsolata, monospace;
+  }
+}
+
+/* Twenty Fifteen Layout Styles */
+.site-container {
+  display: block;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 59.6875em) {
+  .content-area {
+    padding: 7.6923% 7.6923% 0;
+  }
+
+  .entry-header,
+  .entry-content,
+  .entry-summary {
+    padding-left: 7.6923%;
+    padding-right: 7.6923%;
+  }
+}
+
+@media screen and (min-width: 59.6875em) {
+  /* Desktop: 955px and above */
+  body:before {
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    content: "";
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 29.4118%;
+    z-index: 0;
+  }
+
+  .site-container {
+    margin: 0 auto;
+    max-width: 1403px;
+  }
+
+  .sidebar {
+    float: left;
+    margin-right: -100%;
+    max-width: 413px;
+    position: relative;
+    width: 29.4118%;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  .site-content {
+    display: block;
+    float: left;
+    margin-left: 29.4118%;
+    width: 70.5882%;
+  }
+}
+
+.site-content {
+  background-color: transparent;
+}
+
+.content-area {
+  padding: 7.6923%;
+}
+
+/* Post/Entry Styles */
+.hentry {
+  background-color: #fff;
+  padding-top: 7.6923%;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.hentry:first-child {
+  padding-top: 0;
+}
+
+.hentry + .hentry {
+  border-top: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.entry-header {
+  padding: 0 7.6923%;
+}
+
+.entry-title {
+  font-size: 26px;
+  font-size: 2.6rem;
+  line-height: 1.1538;
+  margin-bottom: 0.9231em;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+.entry-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.entry-title a:hover,
+.entry-title a:focus {
+  color: #707070;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.entry-content,
+.entry-summary {
+  padding: 0 7.6923% 7.6923%;
+}
+
+.entry-meta {
+  color: #707070;
+  color: rgba(51, 51, 51, 0.7);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.entry-meta a {
+  color: #707070;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.entry-meta a:hover,
+.entry-meta a:focus {
+  color: #333;
+}
+
+.cat-links,
+.tags-links {
+  display: block;
+}
+
+/* Widget area custom styling */
+.widget-area > aside {
+  font-size: 1.5rem;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.widget-area > aside:not(.widget_kofi):not(.widget_nav_menu):not(.widget_categories) {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.widget-area .widget_text p {
+  margin: 0 0 1.6em;
+}
+
+/* Override widget list padding for proper spacing */
+.widget-area .widget_categories ul,
+.widget-area .widget_nav_menu ul {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/* Sidebar navigation styles */
+.sidebar .main-navigation a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar .main-navigation .nav-group[open] .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.sidebar .main-navigation .submenu a {
+  color: #333;
+}
+
+.sidebar .main-navigation .submenu a:hover {
+  color: #707070;
+  background-color: #f7f7f7;
+}
+
+/* Remove default link underlines in sidebar */
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: none;
 }

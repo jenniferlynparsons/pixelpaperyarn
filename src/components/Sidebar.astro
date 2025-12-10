@@ -1,65 +1,312 @@
 ---
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
+
+// Get all unique categories with post counts
+const categoryMap = new Map<string, number>();
+posts.forEach((post) => {
+  if (post.data.categories) {
+    post.data.categories.forEach((cat) => {
+      const count = categoryMap.get(cat) || 0;
+      categoryMap.set(cat, count + 1);
+    });
+  }
+});
+
+// Sort categories alphabetically
+const categories = Array.from(categoryMap.entries())
+  .sort((a, b) => a[0].localeCompare(b[0]));
+
+// Helper function to convert category name to URL slug
+function categoryToSlug(category: string): string {
+  return category.toLowerCase().replace(/\s+/g, '-');
+}
 ---
 
-<aside class="w-full md:w-80 bg-white text-gray-800 p-8 md:min-h-screen md:border-r md:border-gray-200 md:overflow-y-auto">
-  <div class="flex flex-col gap-8">
-    <section>
-      <h1 class="text-3xl font-bold mb-1">
-        <a href="/" class="hover:text-gray-600 transition-colors">Pixel•Paper•Yarn</a>
+<aside class="sidebar w-full md:w-80 bg-white p-0 md:min-h-screen md:overflow-y-auto" style="background-color: #fff;" id="sidebar">
+  <header class="site-header p-8 pb-0">
+    <div class="site-branding">
+      <h1 class="site-title text-[22px] leading-[1.3636] font-bold mb-0" style="font-family: 'Noto Sans', sans-serif;">
+        <a href="/" class="text-[#333] no-underline hover:text-[#707070]">Pixel•Paper•Yarn</a>
       </h1>
-      <p class="text-gray-600 text-sm">I Make Things</p>
-    </section>
+      <p class="site-description text-[12px] leading-[1.5] mt-2 opacity-70" style="font-family: 'Noto Sans', sans-serif; color: #333;">I Make Things</p>
+      <button class="secondary-toggle md:hidden" aria-label="Menu and widgets">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+  </header>
 
-    <nav class="flex flex-col gap-4">
-      <button class="flex items-center justify-between w-full font-bold text-base hover:text-gray-600 transition-colors">
-        <span>Me</span>
-        <span class="text-lg">▼</span>
-      </button>
-      <a href="#" class="font-bold text-base hover:text-gray-600 transition-colors">My Projects Overview</a>
-      <button class="flex items-center justify-between w-full font-bold text-base hover:text-gray-600 transition-colors">
-        <span>Stuff I Read</span>
-        <span class="text-lg">▼</span>
-      </button>
+  <div class="secondary p-8 pt-6">
+    <nav class="main-navigation mb-6" style="font-family: 'Noto Sans', sans-serif;">
+      <ul class="nav-menu list-none m-0 p-0">
+        <li class="menu-item menu-item-has-children border-t border-[rgba(51,51,51,0.1)]">
+          <a href="#" class="block py-3 px-0 no-underline text-[#333] hover:text-[#707070]">Me</a>
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span class="screen-reader-text">expand child menu</span>
+          </button>
+          <ul class="sub-menu list-none ml-3 hidden">
+            <li class="border-t border-[rgba(51,51,51,0.1)]">
+              <a href="/about" class="block py-3 px-0 no-underline text-[#707070] hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">About Me</a>
+            </li>
+            <li class="border-t border-[rgba(51,51,51,0.1)]">
+              <a href="/links" class="block py-3 px-0 no-underline text-[#707070] hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">Links</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item border-t border-[rgba(51,51,51,0.1)]">
+          <a href="/projects" class="block py-3 px-0 no-underline text-[#333] hover:text-[#707070]">My Projects Overview</a>
+        </li>
+        <li class="menu-item menu-item-has-children border-t border-[rgba(51,51,51,0.1)]">
+          <a href="#" class="block py-3 px-0 no-underline text-[#333] hover:text-[#707070]">Stuff I Read</a>
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span class="screen-reader-text">expand child menu</span>
+          </button>
+          <ul class="sub-menu list-none ml-3 hidden">
+            <li class="border-t border-[rgba(51,51,51,0.1)]">
+              <a href="/the-canon-of-devastation-delight" class="block py-3 px-0 no-underline text-[#707070] hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">The Canon of Devastation &amp; Delight</a>
+            </li>
+            <li class="border-t border-[rgba(51,51,51,0.1)]">
+              <a href="/blog/comic-books" class="block py-3 px-0 no-underline text-[#707070] hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">Comic Books</a>
+            </li>
+            <li class="border-t border-[rgba(51,51,51,0.1)]">
+              <a href="/newsletters-i-read" class="block py-3 px-0 no-underline text-[#707070] hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">Newsletters</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </nav>
 
-    <section class="border-t border-gray-200 pt-8">
-      <p class="mb-4">This site is a weblog, a collection of things I’ve found and observed along the way.</p>
-      <p>Learn a bit more about why I created it on the <a href="#" class="text-blue-600 hover:underline">process post</a>.</p>
-    </section>
+    <div class="widget-area">
+      <aside class="widget widget_text mb-6" style="color: rgba(51, 51, 51, 0.7); font-family: 'Noto Serif', serif;">
+        <p class="text-[15px] leading-[1.6] mb-4">This site is a weblog, a collection of things I've found and observed along the way.</p>
+        <p class="text-[15px] leading-[1.6] mb-0">Learn a bit more about why I created it on the <a href="/why-is-this-site-here" class="text-[#333] hover:text-[#707070]">process post</a>.</p>
+      </aside>
 
-    <section class="border-t-2 border-gray-300 pt-8 mt-8 p-4 border-2">
-      <h2 class="text-base font-bold uppercase tracking-wide mb-3">My Ko-Fi Button</h2>
-      <a href="#" class="w-full bg-gray-800 text-white px-4 py-2 font-bold hover:bg-gray-700 transition-colors block text-center">Buy me a tea!</a>
-    </section>
+      <aside class="widget widget_kofi mb-6">
+        <h2 class="widget-title text-[#333] text-[12px] uppercase tracking-wider mb-6 font-normal" style="font-family: 'Noto Sans', sans-serif; letter-spacing: 0.04em;">My Ko-fi button</h2>
+        <p class="text-[15px] leading-[1.6] mb-4" style="color: rgba(51, 51, 51, 0.7); font-family: 'Noto Serif', serif;">Buy me a tea!</p>
+        <a href="https://ko-fi.com/pixelpaperyarn" target="_blank" rel="noopener" class="inline-block bg-[#46B798] text-white px-4 py-2 rounded font-bold hover:opacity-90 transition-opacity text-sm no-underline" style="font-family: 'Noto Sans', sans-serif;">Buy me a tea!</a>
+      </aside>
 
-    <section class="border-t border-gray-200 pt-8">
-      <h2 class="text-base font-bold uppercase tracking-wide mb-3">Categories</h2>
-      <ul class="space-y-2 text-sm">
-          <li><a href="/tags/humane-technology" class="hover:text-gray-600 transition-colors">Humane Technology</a></li>
-          <li><a href="/tags/music" class="hover:text-gray-600 transition-colors">Music</a></li>
-          <li><a href="/tags/on-software" class="hover:text-gray-600 transition-colors">On Software</a></li>
-          <li><a href="/tags/on-writing" class="hover:text-gray-600 transition-colors">On Writing</a></li>
-          <li><a href="/tags/personal" class="hover:text-gray-600 transition-colors">Personal</a></li>
-          <li><a href="/tags/plastic" class="hover:text-gray-600 transition-colors">Plastic</a></li>
-          <li><a href="/tags/process" class="hover:text-gray-600 transition-colors">Process</a></li>
-          <li><a href="/tags/reading" class="hover:text-gray-600 transition-colors">Reading</a></li>
-          <li><a href="/tags/recipes" class="hover:text-gray-600 transition-colors">Recipes</a></li>
-          <li><a href="/tags/tea" class="hover:text-gray-600 transition-colors">Tea</a></li>
-          <li><a href="/tags/video-games" class="hover:text-gray-600 transition-colors">Video Games</a></li>
-      </ul>
-    </section>
+      <aside class="widget widget_categories mb-6">
+        <h2 class="widget-title text-[#333] text-[12px] uppercase tracking-wider mb-6 font-normal" style="font-family: 'Noto Sans', sans-serif; letter-spacing: 0.04em;">Categories</h2>
+        <ul class="list-none m-0 p-0" style="font-family: 'Noto Sans', sans-serif;">
+          {categories.map(([category, count]) => (
+            <li class="cat-item">
+              <a href={`/categories/${categoryToSlug(category)}`} class="text-[15px] no-underline hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">
+                {category}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </aside>
 
-    <section class="border-t border-gray-200 pt-8">
-      <h2 class="text-base font-bold uppercase tracking-wide mb-3">Other Sites & Projects</h2>
-      <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:text-gray-600 transition-colors">Dev Blog & Resume</a></li>
-          <li><a href="#" class="hover:text-gray-600 transition-colors">selfcare.tech</a></li>
-          <li><a href="#" class="hover:text-gray-600 transition-colors">Commonplace Newsletter</a></li>
-          <li><a href="#" class="hover:text-gray-600 transition-colors">My Books</a></li>
-          <li><a href="#" class="hover:text-gray-600 transition-colors">Luna Station Quarterly</a></li>
-          <li><a href="#" class="hover:text-gray-600 transition-colors">Luna Station Press</a></li>
-      </ul>
-    </section>
+      <aside class="widget widget_nav_menu mb-6">
+        <h2 class="widget-title text-[#333] text-[12px] uppercase tracking-wider mb-6 font-normal" style="font-family: 'Noto Sans', sans-serif; letter-spacing: 0.04em;">Other Sites &amp; Projects</h2>
+        <ul class="menu list-none m-0 p-0" style="font-family: 'Noto Sans', sans-serif;">
+          <li class="menu-item">
+            <a href="http://jenniferlynparsons.net" rel="me" class="text-[15px] no-underline hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">Dev Blog &amp; Resume</a>
+          </li>
+          <li class="menu-item">
+            <a href="http://selfcare.tech" class="text-[15px] no-underline hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">selfcare.tech</a>
+          </li>
+          <li class="menu-item">
+            <a href="https://buttondown.email/commonplace" class="text-[15px] no-underline hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">Commonplace Newsletter</a>
+          </li>
+          <li class="menu-item">
+            <a href="http://jenniferlynparsons.com" class="text-[15px] no-underline hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">My Books</a>
+          </li>
+          <li class="menu-item">
+            <a href="http://lunastationquarterly.com" class="text-[15px] no-underline hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">Luna Station Quarterly</a>
+          </li>
+          <li class="menu-item">
+            <a href="http://lunastationpress.com" class="text-[15px] no-underline hover:text-[#333]" style="color: rgba(51, 51, 51, 0.7);">Luna Station Press</a>
+          </li>
+        </ul>
+      </aside>
+    </div>
   </div>
 </aside>
 
+<script>
+  // Dropdown toggle functionality
+  document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      const parentLi = this.closest('li');
+      const submenu = parentLi?.querySelector('.sub-menu');
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      if (submenu) {
+        submenu.classList.toggle('hidden');
+        submenu.classList.toggle('toggled-on');
+        this.setAttribute('aria-expanded', (!isExpanded).toString());
+      }
+    });
+  });
+
+  // Mobile menu toggle functionality
+  const secondaryToggle = document.querySelector('.secondary-toggle');
+  const secondary = document.querySelector('.secondary');
+  const sidebar = document.getElementById('sidebar');
+
+  if (secondaryToggle && secondary) {
+    secondaryToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      secondary.classList.toggle('toggled-on');
+      sidebar?.classList.toggle('toggled-on');
+      this.classList.toggle('toggled-on');
+    });
+  }
+</script>
+
+<style>
+  .dropdown-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: transparent;
+    border: 0;
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .dropdown-toggle:after {
+    content: "▼";
+    font-size: 12px;
+    position: relative;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: block;
+    color: rgba(51, 51, 51, 0.7);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  .dropdown-toggle[aria-expanded="true"]:after {
+    transform: rotate(180deg);
+  }
+
+  .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+
+  .menu-item-has-children {
+    position: relative;
+  }
+
+  .menu-item-has-children > a {
+    padding-right: 48px;
+  }
+
+  .sub-menu.toggled-on {
+    display: block !important;
+  }
+
+  .cat-item {
+    line-height: 1.6;
+  }
+
+  .widget ul li {
+    line-height: 1.6;
+  }
+
+  /* Mobile menu toggle button */
+  .site-branding {
+    position: relative;
+  }
+
+  .secondary-toggle {
+    background-color: transparent;
+    border: 1px solid #eaeaea;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    border-radius: 0;
+    cursor: pointer;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .icon-bar {
+    background-color: #333;
+    display: block;
+    height: 2px;
+    width: 24px;
+    transition: all 0.3s ease;
+  }
+
+  .secondary-toggle.toggled-on .icon-bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .secondary-toggle.toggled-on .icon-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .secondary-toggle.toggled-on .icon-bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .secondary-toggle:hover,
+  .secondary-toggle:focus {
+    background-color: transparent;
+    border-color: #333;
+  }
+
+  /* Hide secondary on mobile by default */
+  @media screen and (max-width: 59.6875em) {
+    .secondary {
+      background-color: #fff;
+      display: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .secondary.toggled-on {
+      display: block;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+      padding: 7.6923% 7.6923% 0;
+    }
+
+    .sidebar.toggled-on {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+  }
+
+  /* Hide hamburger button on desktop */
+  @media screen and (min-width: 59.6875em) {
+    .secondary-toggle {
+      display: none;
+    }
+
+    .secondary {
+      display: block !important;
+    }
+  }
+</style>
