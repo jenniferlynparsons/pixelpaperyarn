@@ -1,4 +1,5 @@
 ---
+import Sidebar from '../components/Sidebar.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -18,6 +19,11 @@ const { title = 'Pixel Paper Yarn' } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<div class="md:flex">
+			<Sidebar />
+			<main class="flex-1 p-6 md:p-12 bg-white">
+				<slot />
+			</main>
+		</div>
 	</body>
 </html>

@@ -10,5 +10,263 @@
   to = "/index.html"
   status = 200
 
-# Additional redirects for migrated WordPress posts will be added here
-# Format: from = "/old-wordpress-url", to = "/new-astro-path", status = 301
+# Generated redirects from WordPress post IDs to new Astro blog routes
+[[redirects]]
+  from = "/?p=9"
+  to = "/blog/about/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=58"
+  to = "/blog/projects/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=61"
+  to = "/blog/links/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=69"
+  to = "/blog/why-is-this-site-here/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=86"
+  to = "/blog/career-thoughts-and-being-honest-with-myself/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=88"
+  to = "/blog/pruning/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=125"
+  to = "/blog/comic-books/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=141"
+  to = "/blog/on-software-engineering/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=150"
+  to = "/blog/cranky-tech-rant-1/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=155"
+  to = "/blog/the-tea-cabinet/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=160"
+  to = "/blog/immersive-skyrim-introduction/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=170"
+  to = "/blog/focus-music/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=191"
+  to = "/blog/newsletters-i-read/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=203"
+  to = "/blog/my-mac-software-list/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=208"
+  to = "/blog/the-canon-of-devastation-delight/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=214"
+  to = "/blog/my-dev-tools/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=220"
+  to = "/blog/react-rails-and-the-degradation-of-the-developer-experience/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=235"
+  to = "/blog/on-certification/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=244"
+  to = "/blog/dont-forget-to-breathe/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=259"
+  to = "/blog/insomnia-and-getting-stuff-done/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=262"
+  to = "/blog/documentation-studying-and-making-things-easy/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=272"
+  to = "/blog/simplified-mushroom-risotto/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=299"
+  to = "/blog/input-output/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=306"
+  to = "/blog/evolving-interactions/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=316"
+  to = "/blog/on-upgrades/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=329"
+  to = "/blog/goodbye-2019-hello-2020/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=332"
+  to = "/blog/a-personal-body-hack/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=346"
+  to = "/blog/weekends-are-for-rest-and-planning/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=350"
+  to = "/blog/when-i-get-off-of-this-mountain-you-know-where-i-want-to-go/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=362"
+  to = "/blog/mornin/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=365"
+  to = "/blog/yeah-its-possible-but-would-i-like-it/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=369"
+  to = "/blog/sort-process-collate-enjoy/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=374"
+  to = "/blog/a-small-anecdote/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=377"
+  to = "/blog/my-2020-tech-job-search-play-by-play/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=387"
+  to = "/blog/digital-gardening-for-myself/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=393"
+  to = "/blog/on-reclaiming-boredom/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=396"
+  to = "/blog/questions-for-myself/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=399"
+  to = "/blog/report-from-the-land-of-brood-x-we-now-welcome-our-new-cicada-overlords/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=424"
+  to = "/blog/a-reclamation-of-that-which-i-am-not-done-with-yet/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=428"
+  to = "/blog/on-writing-personal-decision-records/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=431"
+  to = "/blog/emma/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=433"
+  to = "/blog/makeshift-haramaki/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=439"
+  to = "/blog/managing-slack/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=442"
+  to = "/blog/on-indulgence-in-writing/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=445"
+  to = "/blog/klaus/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=449"
+  to = "/blog/preparing-for-2022-a-new-system/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=459"
+  to = "/blog/secret-gems/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=461"
+  to = "/blog/touch-the-sound/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=463"
+  to = "/blog/foundations-of-decay/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=465"
+  to = "/blog/on-my-own-lack-of-formal-education-in-my-field/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=472"
+  to = "/blog/social-media-nomad/"
+  status = 301
+
+[[redirects]]
+  from = "/?p=478"
+  to = "/blog/diy-rubber-bridge-modifying-an-acoustic-guitar/"
+  status = 301
