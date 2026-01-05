@@ -25,20 +25,20 @@ function tagToSlug(tag: string): string {
 }
 ---
 
-<article class="hentry post type-post status-publish format-standard bg-white relative pt-content-v border-t border-gray-200/10 mx-0 md:mx-20 mb-24">
-  <header class="entry-header px-20">
-    <h1 class="entry-title">{title}</h1>
-    <div class="entry-meta">
+<article class="hentry post type-post status-publish format-standard bg-white relative pt-content-v border-t border-gray-200/10 mx-0 md:mx-auto mb-24 md:max-w-3xl">
+  <header class="entry-header px-10 md:px-20  mb-8">
+    <h1 class="entry-title font-sans font-bold text-2xl sm:text-3xl lg:text-4xl mb-4">{title}</h1>
+    <div class="entry-meta text-xs text-gray-600">
       <time datetime={date} class="entry-date published">{formattedDate}</time>
     </div>
   </header>
 
-  <div class="entry-content px-20 pb-content-v">
+  <div class="entry-content px-10 md:px-20  pb-content-v">
     <slot />
   </div>
 
   {(categories.length > 0 || tags.length > 0) && (
-    <footer class="entry-footer px-20 pb-content-v">
+    <footer class="entry-footer px-10 md:px-20  pb-content-v">
       <div class="entry-meta">
         {categories.length > 0 && (
           <span class="cat-links inline">

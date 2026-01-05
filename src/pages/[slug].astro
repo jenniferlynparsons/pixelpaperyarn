@@ -1,5 +1,6 @@
 ---
-import BlogLayout from '../layouts/BlogLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageLayout from '../layouts/PageLayout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -15,9 +16,8 @@ const { page } = Astro.props;
 const { Content } = await page.render();
 ---
 
-<BlogLayout title={`${page.data.title} - Pixel Paper Yarn`}>
-  <h1 class="text-4xl font-bold mb-8">{page.data.title}</h1>
-  <div class="prose max-w-none">
+<BaseLayout title={`${page.data.title} - Pixel Paper Yarn`}>
+  <PageLayout title={page.data.title}>
     <Content />
-  </div>
-</BlogLayout>
+  </PageLayout>
+</BaseLayout>

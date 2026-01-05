@@ -1,11 +1,10 @@
 ---
-import BlogLayout from '../layouts/BlogLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageLayout from '../layouts/PageLayout.astro';
 ---
 
-<BlogLayout title="Contact - Pixel Paper Yarn">
-  <h1 class="text-4xl font-bold mb-8">Contact</h1>
-  
-  <div class="max-w-lg prose text-gray-700">
+<BaseLayout title="Contact - Pixel Paper Yarn">
+  <PageLayout title="Contact">
     <p class="mb-6">
       Have a question or just want to say hello? Feel free to reach out!
     </p>
@@ -15,5 +14,5 @@ import BlogLayout from '../layouts/BlogLayout.astro';
     <p>
       You can also find me on social media or check out my projects on GitHub.
     </p>
-  </div>
-</BlogLayout>
+  </PageLayout>
+</BaseLayout>
