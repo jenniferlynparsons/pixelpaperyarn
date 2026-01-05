@@ -32,7 +32,7 @@ function categoryToSlug(category: string): string {
 	) : (
 		<>
 			{recentPosts.map((post, index) => (
-				<article class={`hentry post type-post status-publish format-standard bg-white relative pt-content-v border-t border-gray-200/10 mx-20 mb-24`}>
+				<article class={`hentry post type-post status-publish format-standard bg-white relative pt-content-v border-t border-gray-200/10 mx-0 md:mx-20 mb-24`}>
 					<header class="entry-header px-20">
 						<h2 class="entry-title">
 							<a href={`/blog/${post.data.slug || post.slug}`} rel="bookmark">
@@ -76,7 +76,7 @@ function categoryToSlug(category: string): string {
 			))}
 
 			{/* Pagination */}
-			<nav class="pagination bg-white border-t border-gray-200/10 py-8 px-20 ml-20 mr-20">
+			<nav class="pagination bg-white border-t border-gray-200/10 py-8 px-20 mx-0 md:mx-20">
 				<div class="nav-links flex justify-center items-center gap-2">
 					<span class="page-numbers current px-4 py-2 bg-gray-800 text-white rounded">
 						1
