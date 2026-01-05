@@ -64,80 +64,10 @@
 }
 
 /* Twenty Fifteen Layout Styles */
-.site-container {
-  display: block;
-}
-
-/* Mobile styles */
-@media screen and (max-width: 59.6875em) {
-  .content-area {
-    padding: 7.6923% 7.6923% 0;
-  }
-
-  .entry-header,
-  .entry-content,
-  .entry-summary {
-    padding-left: 7.6923%;
-    padding-right: 7.6923%;
-  }
-}
-
 @media screen and (min-width: 59.6875em) {
   /* Desktop: 955px and above */
-  body:before {
-    background-color: #fff;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-    content: "";
-    display: block;
-    height: 100%;
-    min-height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 29.4118%;
-    z-index: 0;
-  }
-
-  .site-container {
-    margin: 0 auto;
-    max-width: 1403px;
-  }
-
   .sidebar {
-    float: left;
-    margin-right: -100%;
-    max-width: 413px;
-    position: relative;
-    width: 29.4118% !important;
-    background-color: #fff;
-    z-index: 1;
-  }
-
-  .site-content {
-    display: block;
-    float: left;
-    margin-left: 29.4118%;
-    width: 70.5882%;
-  }
-}
-
-.site-content {
-  background-color: transparent;
-}
-
-/* Mobile: content area has padding */
-.content-area {
-  padding: 7.6923%;
-}
-
-/* Desktop: site-main has vertical padding only */
-@media screen and (min-width: 59.6875em) {
-  .content-area {
-    padding: 0;
-  }
-
-  .site-main {
-    padding: 7.6923% 0;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   }
 }
 
