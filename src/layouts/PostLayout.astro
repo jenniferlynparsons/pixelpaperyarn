@@ -26,19 +26,19 @@ function tagToSlug(tag: string): string {
 ---
 
 <article class="hentry post type-post status-publish format-standard bg-white relative">
-  <header class="entry-header px-[7.6923%]">
+  <header class="entry-header px-content-v">
     <h1 class="entry-title">{title}</h1>
     <div class="entry-meta">
       <time datetime={date} class="entry-date published">{formattedDate}</time>
     </div>
   </header>
 
-  <div class="entry-content px-[7.6923%] pb-[7.6923%]">
+  <div class="entry-content px-content-v pb-content-v">
     <slot />
   </div>
 
   {(categories.length > 0 || tags.length > 0) && (
-    <footer class="entry-footer px-[7.6923%] pb-[7.6923%]">
+    <footer class="entry-footer px-content-v pb-content-v">
       <div class="entry-meta">
         {categories.length > 0 && (
           <span class="cat-links inline">
