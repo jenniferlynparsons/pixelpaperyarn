@@ -89,9 +89,9 @@ const categories = Array.from(categoryMap.entries())
 
       <aside class="widget widget_categories mb-widget-gap">
         <h2 class="widget-title text-gray-800 text-sm uppercase tracking-wider mb-6 font-bold font-sans md:px-sidebar-h">Categories</h2>
-        <ul class="list-none m-0 p-0 font-sans md:px-sidebar-h">
+        <ul class="list-none m-0 p-0 font-serif md:px-sidebar-h">
           {categories.map(([category, count], index) => (
-            <li class={`cat-item ${index === 0 ? 'pt-0' : 'pt-3 border-t border-gray-200/10'} pb-3`}>
+            <li class={`cat-item ${index === 0 ? '' : 'border-t border-gray-200/60'} py-3`}>
               <a href={`/categories/${categoryToSlug(category)}`} class="text-base no-underline text-gray-600 hover:text-gray-800 transition-colors leading-relaxed">
                 {category}
               </a>
@@ -102,7 +102,7 @@ const categories = Array.from(categoryMap.entries())
 
       <aside class="widget widget_nav_menu mb-widget-gap">
         <h2 class="widget-title text-gray-800 text-sm uppercase tracking-wider mb-6 font-bold font-sans md:px-sidebar-h">Other Sites &amp; Projects</h2>
-        <ul class="menu list-none m-0 p-0 font-sans md:px-sidebar-h">
+        <ul class="menu list-none m-0 p-0 font-serif md:px-sidebar-h">
           {[
             { href: 'http://jenniferlynparsons.net', rel: 'me', text: 'Dev Blog & Resume' },
             { href: 'http://selfcare.tech', text: 'selfcare.tech' },
@@ -111,7 +111,7 @@ const categories = Array.from(categoryMap.entries())
             { href: 'http://lunastationquarterly.com', text: 'Luna Station Quarterly' },
             { href: 'http://lunastationpress.com', text: 'Luna Station Press' }
           ].map((item, index) => (
-            <li class={`menu-item ${index === 0 ? 'pt-0' : 'pt-3 border-t border-gray-200/10'} pb-3`}>
+            <li class={`menu-item ${index === 0 ? '' : 'border-t border-gray-200/60'} py-3`}>
               <a href={item.href} rel={item.rel} class="text-base no-underline text-gray-600 hover:text-gray-800 transition-colors leading-relaxed">{item.text}</a>
             </li>
           ))}
