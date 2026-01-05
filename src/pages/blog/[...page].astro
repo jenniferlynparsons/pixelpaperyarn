@@ -37,7 +37,7 @@ function categoryToSlug(category: string): string {
   ) : (
     <>
       {page.data.map((post: any) => (
-        <article class="hentry post type-post status-publish format-standard bg-white relative pt-content-v border-t border-gray-200/10 mx-20 mb-12">
+        <article class="hentry post type-post status-publish format-standard bg-white relative pt-content-v border-t border-gray-200/10 mx-20 mb-24">
           <header class="entry-header px-20">
             <h2 class="entry-title">
               <a href={`/blog/${post.data.slug || post.slug}`} rel="bookmark">
