@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import type { Page } from 'astro';
+
+export async function getStaticPaths({ paginate }: any) {
+  const allPosts = await getCollection('posts');
+  const sortedPosts = allPosts.sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+  );
+
+  // Render each post's content for display
+  const postsWithContent = await Promise.all(
+    sortedPosts.map(async (post) => ({
+      ...post,
+      Content: (await post.render()).Content
+    }))
+  );
+
+  return paginate(postsWithContent, { pageSize: 5 });
+}
+
+interface Props {
+  page: Page<any>;
+}
+
+const { page } = Astro.props;
+
+function categoryToSlug(category: string): string {
+  return category.toLowerCase().replace(/\s+/g, '-');
+}
+---
+
+<BaseLayout>
+  {page.data.length === 0 ? (
+    <p class="text-gray-600">No posts yet. Check back soon!</p>
+  ) : (
+    <>
+      {page.data.map((post: any) => (
+        <article class="hentry post type-post status-publish format-standard bg-white relative pt-[7.6923%] border-t border-gray-200/10 ml-20 mr-20">
+          <header class="entry-header px-20">
+            <h2 class="entry-title">
+              <a href={`/blog/${post.data.slug || post.slug}`} rel="bookmark">
+                {post.data.title}
+              </a>
+            </h2>
+          </header>
+
+          <div class="entry-content px-20 pb-[7.6923%]">
+            <post.Content />
+          </div>
+
+          <footer class="entry-footer px-20 pb-[7.6923%]">
+            <div class="entry-meta text-sm text-gray-600">
+              <span class="posted-on">
+                <span class="screen-reader-text">Posted on </span>
+                <time class="entry-date published" datetime={post.data.date.toString()}>
+                  {new Date(post.data.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </time>
+              </span>
+              {post.data.categories && post.data.categories.length > 0 && (
+                <span class="cat-links">
+                  <span class="screen-reader-text">Categories </span>
+                  {post.data.categories.map((cat: string, i: number) => (
+                    <>
+                      <a href={`/categories/${categoryToSlug(cat)}`} rel="category tag">
+                        {cat}
+                      </a>
+                      {i < (post.data.categories?.length ?? 0) - 1 && <span>, </span>}
+                    </>
+                  ))}
+                </span>
+              )}
+            </div>
+          </footer>
+        </article>
+      ))}
+
+      {/* Pagination */}
+      <nav class="pagination bg-white border-t border-gray-200/10 py-8 px-20 ml-20 mr-20">
+        <div class="nav-links flex justify-center items-center gap-2">
+          {page.url.prev && (
+            <a href={page.url.prev} class="prev page-numbers px-4 py-2 hover:bg-gray-100 rounded">
+              ←
+            </a>
+          )}
+
+          {page.currentPage === 1 ? (
+            <span class="page-numbers current px-4 py-2 bg-gray-800 text-white rounded">
+              1
+            </span>
+          ) : (
+            <a href="/blog" class="page-numbers px-4 py-2 hover:bg-gray-100 rounded">
+              1
+            </a>
+          )}
+
+          {page.currentPage > 3 && <span class="page-numbers dots px-2">…</span>}
+
+          {page.currentPage > 2 && page.currentPage !== page.lastPage && (
+            <a href={`/blog/${page.currentPage - 1}`} class="page-numbers px-4 py-2 hover:bg-gray-100 rounded">
+              {page.currentPage - 1}
+            </a>
+          )}
+
+          {page.currentPage !== 1 && page.currentPage !== page.lastPage && (
+            <span class="page-numbers current px-4 py-2 bg-gray-800 text-white rounded">
+              {page.currentPage}
+            </span>
+          )}
+
+          {page.currentPage < page.lastPage - 1 && (
+            <a href={`/blog/${page.currentPage + 1}`} class="page-numbers px-4 py-2 hover:bg-gray-100 rounded">
+              {page.currentPage + 1}
+            </a>
+          )}
+
+          {page.currentPage < page.lastPage - 2 && <span class="page-numbers dots px-2">…</span>}
+
+          {page.lastPage > 1 && (
+            page.currentPage === page.lastPage ? (
+              <span class="page-numbers current px-4 py-2 bg-gray-800 text-white rounded">
+                {page.lastPage}
+              </span>
+            ) : (
+              <a href={`/blog/${page.lastPage}`} class="page-numbers px-4 py-2 hover:bg-gray-100 rounded">
+                {page.lastPage}
+              </a>
+            )
+          )}
+
+          {page.url.next && (
+            <a href={page.url.next} class="next page-numbers px-4 py-2 bg-gray-800 text-white hover:bg-gray-700 rounded flex items-center gap-2">
+              <span>→</span>
+            </a>
+          )}
+        </div>
+      </nav>
+    </>
+  )}
+</BaseLayout>

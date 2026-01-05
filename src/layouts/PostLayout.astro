@@ -25,24 +25,24 @@ function tagToSlug(tag: string): string {
 }
 ---
 
-<article class="hentry post type-post status-publish format-standard">
-  <header class="entry-header">
+<article class="hentry post type-post status-publish format-standard bg-white relative">
+  <header class="entry-header px-[7.6923%]">
     <h1 class="entry-title">{title}</h1>
     <div class="entry-meta">
       <time datetime={date} class="entry-date published">{formattedDate}</time>
     </div>
   </header>
 
-  <div class="entry-content">
+  <div class="entry-content px-[7.6923%] pb-[7.6923%]">
     <slot />
   </div>
 
   {(categories.length > 0 || tags.length > 0) && (
-    <footer class="entry-footer" style="padding: 0 7.6923% 7.6923%;">
+    <footer class="entry-footer px-[7.6923%] pb-[7.6923%]">
       <div class="entry-meta">
         {categories.length > 0 && (
-          <span class="cat-links" style="display: inline;">
-            <span style="color: rgba(51, 51, 51, 0.7);">Posted in </span>
+          <span class="cat-links inline">
+            <span class="text-gray-600">Posted in </span>
             {categories.map((cat, index) => (
               <>
                 <a href={`/categories/${categoryToSlug(cat)}`} rel="category tag">
@@ -54,8 +54,8 @@ function tagToSlug(tag: string): string {
           </span>
         )}
         {tags.length > 0 && (
-          <span class="tags-links" style="display: inline; margin-left: 1em;">
-            <span style="color: rgba(51, 51, 51, 0.7);">Tagged </span>
+          <span class="tags-links inline ml-4">
+            <span class="text-gray-600">Tagged </span>
             {tags.map((tag, index) => (
               <>
                 <a href={`/tags/${tagToSlug(tag)}`} rel="tag">
