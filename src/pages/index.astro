@@ -32,7 +32,7 @@ function categoryToSlug(category: string): string {
 	) : (
 		<>
 			{recentPosts.map((post, index) => (
-				<article class={`hentry post type-post status-publish format-standard bg-white relative pt-content-v border-t border-gray-200/10 ml-20 mr-10`}>
+				<article class={`hentry post type-post status-publish format-standard bg-white relative pt-[7.6923%] border-t border-gray-200/10 ml-20 mr-10`}>
 					<header class="entry-header px-20">
 						<h2 class="entry-title">
 							<a href={`/blog/${post.data.slug || post.slug}`} rel="bookmark">
@@ -41,11 +41,11 @@ function categoryToSlug(category: string): string {
 						</h2>
 					</header>
 
-					<div class="entry-content px-20 pb-content-v">
+					<div class="entry-content px-20 pb-[7.6923%]">
 						<post.Content />
 					</div>
 
-					<footer class="entry-footer px-20 pb-content-v">
+					<footer class="entry-footer px-20 pb-[7.6923%]">
 						<div class="entry-meta text-sm text-gray-600">
 							<span class="posted-on">
 								<span class="screen-reader-text">Posted on </span>
