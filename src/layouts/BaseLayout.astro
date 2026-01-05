@@ -20,15 +20,11 @@ const { title = 'Pixel Paper Yarn' } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="site-container">
+		<div class="flex flex-col md:flex-row min-h-screen max-w-site mx-auto">
 			<Sidebar />
-			<div id="content" class="site-content">
-				<div id="primary" class="content-area">
-					<main id="main" class="site-main">
-						<slot />
-					</main>
-				</div>
-			</div>
+			<main class="flex-1 md:py-content-v">
+				<slot />
+			</main>
 		</div>
 	</body>
 </html>
