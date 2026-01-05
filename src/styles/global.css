@@ -18,6 +18,9 @@
   --width-sidebar: 29.4118%;
   --max-width-sidebar: 413px;
   --max-width-site: 1403px;
+
+  /* Override md breakpoint to match Twenty Fifteen theme */
+  --breakpoint-md: 59.6875em;
 }
 
 /* Custom global styles */
