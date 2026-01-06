@@ -1,9 +1,10 @@
 ---
-import BlogLayout from '../layouts/BlogLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageLayout from '../layouts/PageLayout.astro';
 import { getCollection } from 'astro:content';
 
 const posts = await getCollection('posts');
-const sortedPosts = posts.sort((a, b) => 
+const sortedPosts = posts.sort((a, b) =>
   new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
 );
 
@@ -26,29 +27,29 @@ const formatDate = (date: Date | string) => {
 };
 ---
 
-<BlogLayout title="Archive - Pixel Paper Yarn">
-  <h1 class="text-4xl font-bold mb-8">Archive</h1>
-  
-  <div class="space-y-8">
-    {years.map((year) => (
-      <section>
-        <h2 class="text-2xl font-bold mb-4 text-teal-600">{year}</h2>
-        <ul class="space-y-2">
-          {postsByYear[Number(year)].map((post) => (
-            <li>
-              <a 
-                href={`/blog/${post.data.slug}`}
-                class="text-teal-600 hover:text-teal-800 transition-colors"
-              >
-                {post.data.title}
-              </a>
-              <span class="text-gray-500 text-sm ml-2">
-                ({formatDate(post.data.date)})
-              </span>
-            </li>
-          ))}
-        </ul>
-      </section>
-    ))}
-  </div>
-</BlogLayout>
+<BaseLayout title="Archive - Pixel Paper Yarn">
+  <PageLayout title="Archive">
+    <div class="space-y-8">
+      {years.map((year) => (
+        <section>
+          <h2 class="text-2xl font-bold mb-4 text-teal-600">{year}</h2>
+          <ul class="space-y-2">
+            {postsByYear[Number(year)].map((post) => (
+              <li>
+                <a
+                  href={`/blog/${post.data.slug}`}
+                  class="text-teal-600 hover:text-teal-800 transition-colors"
+                >
+                  {post.data.title}
+                </a>
+                <span class="text-gray-500 text-sm ml-2">
+                  ({formatDate(post.data.date)})
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </PageLayout>
+</BaseLayout>

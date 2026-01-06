@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleEntry from '../components/ArticleEntry.astro';
 import { getCollection } from 'astro:content';
 
 const allPosts = await getCollection('posts');
@@ -20,10 +21,6 @@ const recentPosts = await Promise.all(
 // Calculate total pages for pagination
 const pageSize = 5;
 const totalPages = Math.ceil(sortedPosts.length / pageSize);
-
-function categoryToSlug(category: string): string {
-  return category.toLowerCase().replace(/\s+/g, '-');
-}
 ---
 
 <BaseLayout>
@@ -31,52 +28,12 @@ function categoryToSlug(category: string): string {
 		<p class="text-gray-600">No posts yet. Check back soon!</p>
 	) : (
 		<>
-			{recentPosts.map((post, index) => (
-				<article class={`hentry post type-post status-publish format-standard bg-white relative pt-[7.6923%] border-t border-gray-200/10 ml-20 mr-10`}>
-					<header class="entry-header px-20">
-						<h2 class="entry-title">
-							<a href={`/blog/${post.data.slug || post.slug}`} rel="bookmark">
-								{post.data.title}
-							</a>
-						</h2>
-					</header>
-
-					<div class="entry-content px-20 pb-[7.6923%]">
-						<post.Content />
-					</div>
-
-					<footer class="entry-footer px-20 pb-[7.6923%]">
-						<div class="entry-meta text-sm text-gray-600">
-							<span class="posted-on">
-								<span class="screen-reader-text">Posted on </span>
-								<time class="entry-date published" datetime={post.data.date.toString()}>
-									{new Date(post.data.date).toLocaleDateString('en-US', {
-										year: 'numeric',
-										month: 'long',
-										day: 'numeric'
-									})}
-								</time>
-							</span>
-							{post.data.categories && post.data.categories.length > 0 && (
-								<span class="cat-links">
-									<span class="screen-reader-text">Categories </span>
-									{post.data.categories.map((cat, i) => (
-										<>
-											<a href={`/categories/${categoryToSlug(cat)}`} rel="category tag">
-												{cat}
-											</a>
-											{i < (post.data.categories?.length ?? 0) - 1 && <span>, </span>}
-										</>
-									))}
-								</span>
-							)}
-						</div>
-					</footer>
-				</article>
+			{recentPosts.map((post) => (
+				<ArticleEntry post={post} />
 			))}
 
 			{/* Pagination */}
-			<nav class="pagination bg-white border-t border-gray-200/10 py-8 px-20 ml-20 mr-20">
+			<nav class="pagination bg-white border-t border-gray-200/10 py-8 px-10 md:px-20 mx-0 md:mx-auto md:max-w-3xl">
 				<div class="nav-links flex justify-center items-center gap-2">
 					<span class="page-numbers current px-4 py-2 bg-gray-800 text-white rounded">
 						1

@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<article class="page hentry page-publish format-standard bg-white relative pt-content-v border-t border-gray-200/10 mx-0 md:mx-auto mb-24 md:max-w-3xl">
+  <header class="entry-header px-10 md:px-20  mb-8">
+    <h1 class="entry-title font-sans font-bold text-2xl sm:text-3xl lg:text-4xl mb-4">{title}</h1>
+  </header>
+
+  <div class="entry-content px-10 md:px-20  pb-content-v">
+    <slot />
+  </div>
+</article>
