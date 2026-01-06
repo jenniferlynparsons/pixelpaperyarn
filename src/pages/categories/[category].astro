@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
+  const pageSize = 5;
 
   // Get all unique categories
   const categorySet = new Set<string>();
@@ -14,47 +15,139 @@ export async function getStaticPaths() {
     }
   });
 
-  // Create a path for each category with rendered content
+  // Create paths for each category and each page
   const paths = await Promise.all(
-    Array.from(categorySet).map(async (category) => {
+    Array.from(categorySet).flatMap(async (category) => {
       const categoryPosts = posts
         .filter((p) =>
           p.data.categories?.some(c => c.toLowerCase() === category.toLowerCase())
         )
         .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 
-      const postsWithContent = await Promise.all(
-        categoryPosts.map(async (post) => ({
-          ...post,
-          Content: (await post.render()).Content
-        }))
+      const totalPages = Math.ceil(categoryPosts.length / pageSize);
+      const categorySlug = category.toLowerCase().replace(/\s+/g, '-');
+
+      // Create paths for all pages of this category
+      const categoryPaths = await Promise.all(
+        Array.from({ length: totalPages }, async (_, i) => {
+          const pageNum = i + 1;
+          const start = i * pageSize;
+          const end = start + pageSize;
+          const pagePosts = categoryPosts.slice(start, end);
+
+          const postsWithContent = await Promise.all(
+            pagePosts.map(async (post) => ({
+              ...post,
+              Content: (await post.render()).Content
+            }))
+          );
+
+          return {
+            params: {
+              category: pageNum === 1 ? categorySlug : `${categorySlug}/page/${pageNum}`
+            },
+            props: {
+              category,
+              posts: postsWithContent,
+              currentPage: pageNum,
+              totalPages,
+              categorySlug
+            },
+          };
+        })
       );
 
-      return {
-        params: { category: category.toLowerCase().replace(/\s+/g, '-') },
-        props: {
-          category,
-          posts: postsWithContent
-        },
-      };
+      return categoryPaths;
     })
   );
 
-  return paths;
+  return paths.flat();
 }
 
-const { category, posts } = Astro.props;
+const { category, posts, currentPage, totalPages, categorySlug } = Astro.props;
 ---
 
 <BaseLayout title={`${category} - Pixel Paper Yarn`}>
   <header class="bg-white relative pt-content-v pb-content-v border-t border-gray-200/10 mx-0 md:mx-auto mb-24 md:max-w-3xl">
-    <div class="px-10 md:px-20  text-center">
+    <div class="px-10 md:px-20 text-center">
       <h1 class="entry-title font-sans font-bold text-2xl sm:text-3xl lg:text-4xl mb-4">{category}</h1>
-      <p class="text-gray-600">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</p>
     </div>
   </header>
 
   {posts.map((post: any) => (
     <ArticleEntry post={post} />
   ))}
+
+  {/* Pagination */}
+  {totalPages > 1 && (
+    <nav class="pagination bg-white border-t border-gray-200/10 py-8 px-10 md:px-20 mx-0 md:mx-auto md:max-w-3xl">
+      <div class="nav-links flex justify-center items-center gap-2">
+        {/* Previous button */}
+        {currentPage > 1 && (
+          <a
+            href={currentPage === 2 ? `/categories/${categorySlug}` : `/categories/${categorySlug}/page/${currentPage - 1}`}
+            class="prev page-numbers px-4 py-2 bg-gray-800 text-white hover:bg-gray-700 rounded flex items-center gap-2"
+          >
+            <span>←</span>
+          </a>
+        )}
+
+        {/* First page */}
+        {currentPage === 1 ? (
+          <span class="page-numbers current px-4 py-2 bg-gray-800 text-white rounded">
+            1
+          </span>
+        ) : (
+          <a href={`/categories/${categorySlug}`} class="page-numbers px-4 py-2 hover:bg-gray-100 rounded">
+            1
+          </a>
+        )}
+
+        {/* Second page */}
+        {totalPages > 1 && (
+          <>
+            {currentPage === 2 ? (
+              <span class="page-numbers current px-4 py-2 bg-gray-800 text-white rounded">
+                2
+              </span>
+            ) : (
+              <a href={`/categories/${categorySlug}/page/2`} class="page-numbers px-4 py-2 hover:bg-gray-100 rounded">
+                2
+              </a>
+            )}
+          </>
+        )}
+
+        {/* Dots if needed */}
+        {totalPages > 2 && currentPage < totalPages - 1 && (
+          <span class="page-numbers dots px-2">…</span>
+        )}
+
+        {/* Last page */}
+        {totalPages > 2 && (
+          <>
+            {currentPage === totalPages ? (
+              <span class="page-numbers current px-4 py-2 bg-gray-800 text-white rounded">
+                {totalPages}
+              </span>
+            ) : (
+              <a href={`/categories/${categorySlug}/page/${totalPages}`} class="page-numbers px-4 py-2 hover:bg-gray-100 rounded">
+                {totalPages}
+              </a>
+            )}
+          </>
+        )}
+
+        {/* Next button */}
+        {currentPage < totalPages && (
+          <a
+            href={`/categories/${categorySlug}/page/${currentPage + 1}`}
+            class="next page-numbers px-4 py-2 bg-gray-800 text-white hover:bg-gray-700 rounded flex items-center gap-2"
+          >
+            <span>→</span>
+          </a>
+        )}
+      </div>
+    </nav>
+  )}
 </BaseLayout>

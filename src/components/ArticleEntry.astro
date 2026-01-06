@@ -23,9 +23,10 @@ const Content = post.Content;
     <Content />
   </div>
 
-  <footer class="entry-footer px-10 md:px-20  pb-content-v">
-    <div class="entry-meta text-sm text-gray-600">
-      <span class="posted-on">
+  <footer class="entry-footer bg-gray-50 px-10 md:px-20 py-6">
+    <div class="entry-meta text-sm text-gray-700 flex flex-wrap gap-x-4 gap-y-2">
+      <span class="posted-on inline-flex items-center gap-1">
+        <span class="genericon genericon-time" aria-hidden="true"></span>
         <span class="screen-reader-text">Posted on </span>
         <time class="entry-date published" datetime={post.data.date.toString()}>
           {new Date(post.data.date).toLocaleDateString('en-US', {
@@ -36,16 +37,19 @@ const Content = post.Content;
         </time>
       </span>
       {post.data.categories && post.data.categories.length > 0 && (
-        <span class="cat-links">
+        <span class="cat-links inline-flex items-center gap-1">
+          <span class="genericon genericon-category" aria-hidden="true"></span>
           <span class="screen-reader-text">Categories </span>
-          {post.data.categories.map((cat: string, i: number) => (
-            <>
-              <a href={`/categories/${categoryToSlug(cat)}`} rel="category tag">
-                {cat}
-              </a>
-              {i < (post.data.categories?.length ?? 0) - 1 && <span>, </span>}
-            </>
-          ))}
+          <span>
+            {post.data.categories.map((cat: string, i: number) => (
+              <>
+                <a href={`/categories/${categoryToSlug(cat)}`} rel="category tag" class="hover:text-gray-900">
+                  {cat}
+                </a>
+                {i < (post.data.categories?.length ?? 0) - 1 && <span>, </span>}
+              </>
+            ))}
+          </span>
         </span>
       )}
     </div>
