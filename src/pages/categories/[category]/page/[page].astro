@@ -1,6 +1,6 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import ArticleEntry from '../../components/ArticleEntry.astro';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import ArticleEntry from '../../../../components/ArticleEntry.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -15,9 +15,9 @@ export async function getStaticPaths() {
     }
   });
 
-  // Create paths for each category's first page only
+  // Create paths for each category's paginated pages (excluding page 1)
   const paths = await Promise.all(
-    Array.from(categorySet).map(async (category) => {
+    Array.from(categorySet).flatMap(async (category) => {
       const categoryPosts = posts
         .filter((p) =>
           p.data.categories?.some(c => c.toLowerCase() === category.toLowerCase())
@@ -27,38 +27,48 @@ export async function getStaticPaths() {
       const totalPages = Math.ceil(categoryPosts.length / pageSize);
       const categorySlug = category.toLowerCase().replace(/\s+/g, '-');
 
-      // Only create path for first page (page 1)
-      const pagePosts = categoryPosts.slice(0, pageSize);
+      // Create paths for pages 2 and onwards
+      const categoryPaths = await Promise.all(
+        Array.from({ length: totalPages - 1 }, async (_, i) => {
+          const pageNum = i + 2; // Start from page 2
+          const start = (pageNum - 1) * pageSize;
+          const end = start + pageSize;
+          const pagePosts = categoryPosts.slice(start, end);
 
-      const postsWithContent = await Promise.all(
-        pagePosts.map(async (post) => ({
-          ...post,
-          Content: (await post.render()).Content
-        }))
+          const postsWithContent = await Promise.all(
+            pagePosts.map(async (post) => ({
+              ...post,
+              Content: (await post.render()).Content
+            }))
+          );
+
+          return {
+            params: {
+              category: categorySlug,
+              page: pageNum.toString()
+            },
+            props: {
+              category,
+              posts: postsWithContent,
+              currentPage: pageNum,
+              totalPages,
+              categorySlug
+            },
+          };
+        })
       );
 
-      return {
-        params: {
-          category: categorySlug
-        },
-        props: {
-          category,
-          posts: postsWithContent,
-          currentPage: 1,
-          totalPages,
-          categorySlug
-        },
-      };
+      return categoryPaths;
     })
   );
 
-  return paths;
+  return paths.flat();
 }
 
 const { category, posts, currentPage, totalPages, categorySlug } = Astro.props;
 ---
 
-<BaseLayout title={`${category} - Pixel Paper Yarn`}>
+<BaseLayout title={`${category} - Page ${currentPage} - Pixel Paper Yarn`}>
   <header class="bg-white relative pt-content-v pb-content-v border-t border-gray-200/10 mx-0 md:mx-auto mb-24 md:max-w-3xl">
     <div class="px-10 md:px-20 text-center">
       <h1 class="entry-title font-sans font-bold text-2xl sm:text-3xl lg:text-4xl mb-4">{category}</h1>
