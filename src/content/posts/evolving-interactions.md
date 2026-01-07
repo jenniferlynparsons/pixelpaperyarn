@@ -1,12 +1,10 @@
 ---
 title: Evolving Interactions
-date: "2019-10-10 09:41:18"
+date: "2019-10-10"
 slug: evolving-interactions
 excerpt: In which I talk a bit more about my current take on engaging with the internet at large.
 categories:
   - Humane Technology
-wp_id: 306
-original_url: http://pixelpaperyarn.rocks/2019/10/10/evolving-interactions/
 ---
 
 On a slack I frequent daily, someone asked a question in the #watercooler channel we use for general conversation.

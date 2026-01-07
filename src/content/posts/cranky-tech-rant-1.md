@@ -1,11 +1,9 @@
 ---
 title: "Cranky Tech Rant #1"
-date: "2018-09-14 09:47:50"
+date: "2018-09-14"
 slug: cranky-tech-rant-1
 categories:
   - Humane Technology
-wp_id: 150
-original_url: http://pixelpaperyarn.rocks/2018/09/14/cranky-tech-rant-1/
 ---
 
 *(#1 because yeah, there will be more)*

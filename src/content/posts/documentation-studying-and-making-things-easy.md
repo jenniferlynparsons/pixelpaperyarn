@@ -1,11 +1,9 @@
 ---
 title: Documentation, studying, and making things "easy"
-date: "2018-12-12 18:34:21"
+date: "2018-12-12"
 slug: documentation-studying-and-making-things-easy
 categories:
   - Process
-wp_id: 262
-original_url: http://pixelpaperyarn.rocks/2018/12/12/documentation-studying-and-making-things-easy/
 ---
 
 I spent the last two days reading every inch of the React documentation.With that completed, it's time to open up the Redux docs and start the process all over again.

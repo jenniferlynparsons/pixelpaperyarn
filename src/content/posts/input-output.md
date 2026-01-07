@@ -1,11 +1,9 @@
 ---
 title: Input / Output
-date: "2019-07-15 12:47:45"
+date: "2019-07-15"
 slug: input-output
 categories:
   - Process
-wp_id: 299
-original_url: http://pixelpaperyarn.rocks/2019/07/15/input-output/
 ---
 
 I read through "Deep Work" by Cal Newport this weekend. Admittedly, most of it was a skim as I didn't need the hard sell that deep, focused work for extended periods of time is the best way to get real, valuable things accomplished. For anyone that has been stuck in shallow work for their career, that stuff is probably really eye-opening.

@@ -1,11 +1,9 @@
 ---
 title: Emma
-date: "2021-10-17 14:50:06"
+date: "2021-10-17"
 slug: emma
 categories:
   - Personal
-wp_id: 431
-original_url: http://pixelpaperyarn.rocks/2021/10/17/emma/
 ---
 
 I have a dear friend who lives "across the pond". We've never met in person (or even virtually) because we met on theforce.net fanfic forums 15 years ago. Back then we were both under the spell of Revenge of the Sith and spinning tales about Obi-Wan and Anakin, while chatting regularly about our lives as we helped each other grow as writers.

@@ -30,3 +30,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# WordPress export file (contains personal data)
+scripts/export.xml

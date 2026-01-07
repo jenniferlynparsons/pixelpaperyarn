@@ -1,11 +1,9 @@
 ---
 title: On indulgence in writing
-date: "2021-12-07 10:11:35"
+date: "2021-12-07"
 slug: on-indulgence-in-writing
 categories:
   - On Writing
-wp_id: 442
-original_url: http://pixelpaperyarn.rocks/2021/12/07/on-indulgence-in-writing/
 ---
 
 I’m currently reading a gorgeously-written fanfic* that is one of my favorite things I’ve read all year. In the introduction, the author comments that it’s "the most goddamn self-indulgent fic I have ever written in my life".
@@ -22,4 +20,4 @@ Which brings us back to self-indulgence in writing. Part of the reason these fic
 
 So if you have a story you want to tell, but feel like it’s too something (silly, deep, weird, etc) I encourage you to write it anyway. It’s only my opinion but I feel like you should be the first person who loves the story. If you love it, others will too.
 
-*It’s (https://archiveofourown.org/works/25428517/chapters/61670056) set during The Crusades (one of my historical special interests) and it’s utterly swept me off my feet.
+*It’s [a well-researched, culturally-sensitive, historically-accurate, 65k word The Old Guard fic](https://archiveofourown.org/works/25428517/chapters/61670056) set during The Crusades (one of my historical special interests) and it’s utterly swept me off my feet.

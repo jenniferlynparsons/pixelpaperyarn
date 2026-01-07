@@ -1,12 +1,10 @@
 ---
 title: Weekends are for rest and planning
-date: "2020-03-07 19:32:52"
+date: "2020-03-07"
 slug: weekends-are-for-rest-and-planning
 excerpt: I'm finding that i don't have anything in the tank on the weekends to do any fun coding.
 categories:
   - Plastic
-wp_id: 346
-original_url: http://pixelpaperyarn.rocks/2020/03/07/weekends-are-for-rest-and-planning/
 ---
 
 I'm finding that I don't have anything in the tank on the weekends to do any fun coding. I really want to, but I'm keeping burnout at bay.

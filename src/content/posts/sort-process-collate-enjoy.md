@@ -1,11 +1,9 @@
 ---
 title: Sort, process, collate, enjoy
-date: "2020-06-01 09:32:30"
+date: "2020-06-01"
 slug: sort-process-collate-enjoy
 categories:
   - Process
-wp_id: 369
-original_url: http://pixelpaperyarn.rocks/2020/06/01/sort-process-collate-enjoy/
 ---
 
 The sorting and cataloging of my stuff has begun. We've got to bring everything home from the storage unit (aka stuff I haven't seen in 3 years) and I want to have the things currently in the house organized while it's still manageable.

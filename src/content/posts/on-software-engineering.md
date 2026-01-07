@@ -1,18 +1,16 @@
 ---
 title: On "Software Engineering"
-date: "2018-09-10 11:01:13"
+date: "2018-09-10"
 slug: on-software-engineering
 categories:
   - Humane Technology
-wp_id: 141
-original_url: http://pixelpaperyarn.rocks/2018/09/10/on-software-engineering/
 ---
 
-There was an (https://crate.io/a/on-writing-beautiful-tests/) I read this morning, where Process Engineering practices used in industrial planning is compared with Software Engineering practices for building applications.
+There was an [this article on writing software tests](https://crate.io/a/on-writing-beautiful-tests/) I read this morning, where Process Engineering practices used in industrial planning is compared with Software Engineering practices for building applications.
 
 Much of software built today is created with some level of testing applied, at least on the back end. The front end has been slower to integrate testing, though the tools are just as strong. But in both the front and back end, testing is seen as a necessary evil at best, and an unnecessary burden at worst. A lot of this sentiment, from my experience, comes from a couple different sources.
 
-First, is simple ignorance. The way many of us have entered the industry, through various levels of self-teaching, means there are gaps in understanding of best practices. As someone who came in this way, I'm hyper aware of these gaps and work to fill them. Testing is one of the most difficult skills to learn for a newcomer, especially if you're learning on your own. I can't speak for the bootcamps, having never attended one. I like to think they teach (https://en.wikipedia.org/wiki/Test-driven_development) as a matter of course.
+First, is simple ignorance. The way many of us have entered the industry, through various levels of self-teaching, means there are gaps in understanding of best practices. As someone who came in this way, I'm hyper aware of these gaps and work to fill them. Testing is one of the most difficult skills to learn for a newcomer, especially if you're learning on your own. I can't speak for the bootcamps, having never attended one. I like to think they teach [TDD](https://en.wikipedia.org/wiki/Test-driven_development) as a matter of course.
 
 Second is cost. Testing takes time. In the startup world of "move fast and break things" the things that break are supposed to be the old ways of doing things, opening up the opportunity for more efficiency and a better ways. When testing is sidelined in favor of pushing out a minimum-viable product, what often ends up broken instead is the code base, the application itself and the bread and butter of the business being built.
 

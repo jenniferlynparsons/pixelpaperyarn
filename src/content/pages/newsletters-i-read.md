@@ -3,7 +3,6 @@ title: Newsletters I Read
 date: "2018-10-12 23:15:02"
 slug: newsletters-i-read
 wp_id: 191
-original_url: http://pixelpaperyarn.rocks/newsletters-i-read/
 ---
 
 I get far too many newsletters in my inbox every week. There is a treasure trove of great stuff out there that has little to do with social media. I subscribe to these because they give me links to things I would never find any other way. They also enrich my mind, providing inspiration and new ways of thinking about things.

@@ -1,6 +1,6 @@
 ---
 title: Pruning
-date: "2018-08-30 23:40:40"
+date: "2018-08-30"
 slug: pruning
 categories:
   - Humane Technology
@@ -9,8 +9,6 @@ tags:
   - distraction
   - games
   - iphone
-wp_id: 88
-original_url: http://pixelpaperyarn.rocks/2018/08/30/pruning/
 ---
 
 I was thinking about my phone today. Eventually it will need replacing, but with what? Do I want to stay with the iOS ecosystem? Is there some better option out there?

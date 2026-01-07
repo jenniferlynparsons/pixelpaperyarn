@@ -1,12 +1,10 @@
 ---
 title: Don't forget to breathe
-date: "2018-11-23 22:25:27"
+date: "2018-11-23"
 slug: dont-forget-to-breathe
 excerpt: In my spiritual tradition (as much as what you can what I do a tradition) we call this kind of experience a "heart opening". (mild spoilers for "Love, Simon")
 categories:
   - Personal
-wp_id: 244
-original_url: http://pixelpaperyarn.rocks/2018/11/23/dont-forget-to-breathe/
 ---
 
 “When you were little, you were so carefree. But these last few years, more and more, it's almost like I can feel you holding your breath… You get to exhale now, Simon. You get to be more you than you have been in... in a very long time. You deserve everything you want.” - Emily in “Love, Simon”

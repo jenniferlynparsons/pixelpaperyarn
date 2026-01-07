@@ -1,16 +1,14 @@
 ---
 title: Yeah it's possible, but would I like it?
-date: "2020-05-05 10:55:29"
+date: "2020-05-05"
 slug: yeah-its-possible-but-would-i-like-it
 categories:
   - Humane Technology
-wp_id: 365
-original_url: http://pixelpaperyarn.rocks/2020/05/05/yeah-its-possible-but-would-i-like-it/
 ---
 
 Woke up way too early this morning with uncomfortable dreams. Rather than fight sleep, I decided to pick at my phone.
 
-Yesterday my family had a good discussion about the invasive contact tracking that seems to be heading towards us all like a loaded freight train. We're considering our options ((https://www.thelightphone.com/) is the current front-runner) but in addition to the potential security gain, there's also the quality of life gain and that's what I was considering as I lay there, not sleeping, this morning.
+Yesterday my family had a good discussion about the invasive contact tracking that seems to be heading towards us all like a loaded freight train. We're considering our options ([Light Phone](https://www.thelightphone.com/) is the current front-runner) but in addition to the potential security gain, there's also the quality of life gain and that's what I was considering as I lay there, not sleeping, this morning.
 
 Our phones have become useful companions over the last decade or so, but are they really meant to be companions? Additionally, has society shifted significantly enough to make going offline an extremely radical choice? Is that a choice I want to make?
 

@@ -1,11 +1,9 @@
 ---
 title: Questions for myself
-date: "2021-04-15 20:04:56"
+date: "2021-04-15"
 slug: questions-for-myself
 categories:
   - Personal
-wp_id: 396
-original_url: http://pixelpaperyarn.rocks/2021/04/15/questions-for-myself/
 ---
 
 I recently started getting James Clear's newsletter. In it, he asks a question for the reader to ponder. This week's was:

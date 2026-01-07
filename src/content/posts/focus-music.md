@@ -1,11 +1,9 @@
 ---
 title: Focus music
-date: "2018-09-16 14:54:44"
+date: "2018-09-16"
 slug: focus-music
 categories:
   - Music
-wp_id: 170
-original_url: http://pixelpaperyarn.rocks/2018/09/16/focus-music/
 ---
 
 When I'm coding, sometimes I'll put on various game soundtracks on Spotify.

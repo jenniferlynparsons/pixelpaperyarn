@@ -1,9 +1,7 @@
 ---
 title: Comic Books
-date: "2018-09-04 00:29:46"
+date: "2018-09-04"
 slug: comic-books
-wp_id: 125
-original_url: http://pixelpaperyarn.rocks/comic-books/
 ---
 
 This is a pretty comprehensive list of my *current* comic book subscriptions. I know it looks like a lot, but they don't all come out at once and at various times are on hiatus or delayed for one reason or another. It all boils down to around five or six books a week. Just don't ask me how many I'm actually caught up on reading!

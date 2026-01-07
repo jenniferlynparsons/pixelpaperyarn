@@ -60,6 +60,11 @@
   code, pre {
     @apply font-mono;
   }
+
+  /* Images in post content */
+  .entry-content img {
+    @apply my-4 max-w-full h-auto;
+  }
 }
 
 /* Twenty Fifteen Layout Styles */

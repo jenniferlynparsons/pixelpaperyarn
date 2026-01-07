@@ -1,11 +1,9 @@
 ---
 title: My 2020 tech job search play by play
-date: "2020-11-14 14:03:55"
+date: "2020-11-14"
 slug: my-2020-tech-job-search-play-by-play
 categories:
   - Personal
-wp_id: 377
-original_url: http://pixelpaperyarn.rocks/2020/11/14/my-2020-tech-job-search-play-by-play/
 ---
 
 This was such a stressful process because I had no idea when I would be furloughed. There was no set date and client budget and priorities kept changing. There were a lot of unknowns, but at least I was still getting paid.

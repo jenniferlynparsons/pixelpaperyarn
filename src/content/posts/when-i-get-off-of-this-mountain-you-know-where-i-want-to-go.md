@@ -1,12 +1,10 @@
 ---
 title: When I get off of this mountain, you know where I want to go
-date: "2020-03-14 19:04:31"
+date: "2020-03-14"
 slug: when-i-get-off-of-this-mountain-you-know-where-i-want-to-go
 excerpt: Ever since we went to see "Once Were Brothers" at a local theater, I've been trying to get some words down about The Band and how I feel about the state of music in general. Now is as good a time as any with the sound of "The Last Waltz" floating up the stairs.
 categories:
   - Music
-wp_id: 350
-original_url: http://pixelpaperyarn.rocks/2020/03/14/when-i-get-off-of-this-mountain-you-know-where-i-want-to-go/
 ---
 
 Ever since we went to see "Once Were Brothers" at a local theater, I've been trying to get some words down about The Band and how I feel about the state of music in general. Now is as good a time as any with the sound of "The Last Waltz" floating up the stairs.

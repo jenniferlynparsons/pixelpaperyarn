@@ -1,11 +1,9 @@
 ---
 title: Touch the sound
-date: "2022-05-15 19:55:29"
+date: "2022-05-15"
 slug: touch-the-sound
 categories:
   - Personal
-wp_id: 461
-original_url: http://pixelpaperyarn.rocks/2022/05/15/touch-the-sound/
 ---
 
 I remember maybe a decade ago there was a big trend toward body mods of folks inserting tech into themselves. I'm guessing this is probably something still going on today.

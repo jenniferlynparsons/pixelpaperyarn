@@ -1,12 +1,10 @@
 ---
 title: On Certification
-date: "2018-11-07 11:27:54"
+date: "2018-11-07"
 slug: on-certification
 excerpt: The idea of certification and licensing for software engineers came up in a Slack I'm on. Of course I accidentally ended up writing a wall of text that really needed to be a blog post, so here we are.
 categories:
   - On Software
-wp_id: 235
-original_url: http://pixelpaperyarn.rocks/2018/11/07/on-certification/
 ---
 
 “Software Engineering”, a field of interest launched in 1968 that aimed to bring product design and construction skills to computer scientists by having very clever computer scientists think about what product design and construction might be like and not ask anybody.  - Graham Lee

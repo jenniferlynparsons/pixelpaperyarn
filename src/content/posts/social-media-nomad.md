@@ -1,11 +1,9 @@
 ---
 title: Social media nomad
-date: "2023-05-25 16:52:36"
+date: "2023-05-25"
 slug: social-media-nomad
 categories:
   - Humane Technology
-wp_id: 472
-original_url: http://pixelpaperyarn.rocks/2023/05/25/social-media-nomad/
 ---
 
 I've become a social media nomad and now that I see it, I'll probably be more intentional about it.

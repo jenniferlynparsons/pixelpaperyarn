@@ -1,11 +1,9 @@
 ---
 title: Preparing for 2022, a new system
-date: "2021-12-26 20:04:38"
+date: "2021-12-26"
 slug: preparing-for-2022-a-new-system
 categories:
   - Process
-wp_id: 449
-original_url: http://pixelpaperyarn.rocks/2021/12/26/preparing-for-2022-a-new-system/
 ---
 
 I often spend some of this week each year doing a retro on the previous year and planning what next year will look like.
@@ -44,7 +42,7 @@ I do have a few 2022 goals. They are specific but broad and build on work that I
 
 In addition to those sustainable goals, I'm shifting most of the goals I would usually list for the year to be "ongoing", with no expectation of when they'll be completed or how much progress I'll make on them in the coming year. Things like "organize my digital life" or "publish a new book" are highly specific, but also take a lot of energy and focus. Getting one aspect of my digital life cleaned up or getting one story ready to publish in 2022 would be huge wins viewed through the lens of marginal gains.
 
-As part of getting this all set up, I've stepped back and made a list of my values, based on (https://jamesclear.com/core-values). I have a few more than the suggested 5 value limit (9 core and 9 secondary, to be exact), but it was interesting to think through what these values mean to me and how they manifest in my goals and work.
+As part of getting this all set up, I've stepped back and made a list of my values, based on [a compiled list created by James Clear](https://jamesclear.com/core-values). I have a few more than the suggested 5 value limit (9 core and 9 secondary, to be exact), but it was interesting to think through what these values mean to me and how they manifest in my goals and work.
 
 I also made a list of my particular interests, things that are always with me that I keep coming back to over and over that provide meaning and shape to my world. I even started a hobbies list because I find enrichment important. It's satisfying to have a few things in my life (coloring, building models, watching baseball, etc.) that are there purely for the pleasure they bring. These lists form the core of who I am and what's important to me outside of my career and work.
 The new setup
@@ -54,7 +52,7 @@ There are a few tools I'll be using to manage this system in the coming year:
     Obsidian as my digital notebook (dev journal, commonplace book, monthly summaries). This holds the majority of my daily thoughts, achievements, notes, etc.
     A paper list of my values, hobbies and interests, pinned somewhere visible (this is also stored in my commonplace book to have it at hand)
     A paper weekly focus journal based on PEMS (practical, emotional, mental, spiritual) plus project specific intentions with a post-week reflection.
-    A yearly calendar for mapping out holidays, vacations, and (http://lunastationquarterly.com/) planning.
+    A yearly calendar for mapping out holidays, vacations, and [LSQ](http://lunastationquarterly.com/) planning.
 
 Once a quarter, I'll be sitting down to review my progress and plan the next block. The first quarterly review will use the following:
 

@@ -1,11 +1,9 @@
 ---
 title: Goodbye 2019, Hello 2020
-date: "2019-12-28 18:42:15"
+date: "2019-12-28"
 slug: goodbye-2019-hello-2020
 categories:
   - Process
-wp_id: 329
-original_url: http://pixelpaperyarn.rocks/2019/12/28/goodbye-2019-hello-2020/
 ---
 
 Okay. The work week is officially over until late Monday morning. I can switch gears now as the 2019 shut down/2020 restart process is coming into view. I'm excited to review the last year and see what I've gleaned from this rotation around the Sun. I know I didn't achieve many of my goals, but that's not really the point of setting them, if I'm honest.

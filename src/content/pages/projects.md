@@ -3,7 +3,6 @@ title: Projects
 date: "2018-08-26 21:04:21"
 slug: projects
 wp_id: 58
-original_url: http://pixelpaperyarn.rocks/projects/
 ---
 
 "You don't become great by trying to be great. You become great by wanting to do something, and then doing it so hard that you become great in the process." - (https://xkcd.com/896/)

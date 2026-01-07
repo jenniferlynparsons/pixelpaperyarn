@@ -1,12 +1,10 @@
 ---
 title: Simplified Mushroom Risotto
-date: "2019-01-19 15:25:47"
+date: "2019-01-19"
 slug: simplified-mushroom-risotto
 excerpt: a recipe for a simplified version of mushroom risotto. less stirring, cheaper or vegan options, etc.
 categories:
   - Recipes
-wp_id: 272
-original_url: http://pixelpaperyarn.rocks/2019/01/19/simplified-mushroom-risotto/
 ---
 
 **Ingredients:**
