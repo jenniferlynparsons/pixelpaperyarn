@@ -10,16 +10,16 @@ Okay. The work week is officially over until late Monday morning. I can switch g
 
 I'm slowly developing a process over the years, it follows this general pattern:
 
- 	First, work through a couple yearly reflection workbooks to take stock
- 	Based on what I learn from that, determine the practical and aspirational goals for the year
- 	Then finish up by doing some practical maintenance
+- First, work through a couple yearly reflection workbooks to take stock
+- Based on what I learn from that, determine the practical and aspirational goals for the year
+- Then finish up by doing some practical maintenance
 
 The maintenance tasks will help me konmari my life a bit and make even the aspirational goals more possible:
 
- 	Close out all browser tabs across machines, bookmark/pocket the good stuff
- 	Run backups on all current devices
- 	Organize physical journals/notebooks so they're easy to grab
- 	Catalog current tools (everything from goodreads to what I use to send out newsletters) and determine what can be streamlined/left behind
- 	Organize projects both current and future in Trello so I can pick them up and put them down at will without losing my place
+- Close out all browser tabs across machines, bookmark/pocket the good stuff
+- Run backups on all current devices
+- Organize physical journals/notebooks so they're easy to grab
+- Catalog current tools (everything from goodreads to what I use to send out newsletters) and determine what can be streamlined/left behind
+- Organize projects both current and future in Trello so I can pick them up and put them down at will without losing my place
 
 This isn't all going to get done in the next couple of days. It's more of an all-January kind of deal. I may document some of this process, mostly for my own records, but in case someone else finds it useful, too.

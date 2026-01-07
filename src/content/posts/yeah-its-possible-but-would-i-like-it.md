@@ -16,32 +16,32 @@ In thinking about these questions I decided to start rearranging all those littl
 
 **What does the Light Phone provide out of the box? **
 
- 	Phone (includes Contacts)
- 	Clock (includes Alarm functionality)
- 	Texting (plain text only)
- 	Calculator
+- Phone (includes Contacts)
+- Clock (includes Alarm functionality)
+- Texting (plain text only)
+- Calculator
 
 I moved these apps to the pinned items bar. These are what I would have if I switched right now. This is a workable, usable device. The only hurt I feel within what's available here is not having rich media texting. My family and friends make significant use of the ability to send photos.
 
 **What are the Light Phone folks planning on adding?**
 
- 	GPS
- 	Music
- 	Notes
- 	Calendar
+- GPS
+- Music
+- Notes
+- Calendar
 
 I moved everything else off of the home screen at this point. This honestly fills a LOT of my daily use, though it doesn't match my personal workflow. All of these apps *could* be replaced relatively simply with analog equivalents. Having them available is just handy and make it possible to leave the house with just wallet, keys, and phone without much inconvenience.
 
 **What else does the iPhone provide out of the box (or nearly so) that I actually use?**
 
- 	Reminders
- 	Camera
- 	Voice Memos
- 	Mail
- 	Photos
- 	Podcasts
- 	Safari
- 	Weather
+- Reminders
+- Camera
+- Voice Memos
+- Mail
+- Photos
+- Podcasts
+- Safari
+- Weather
 
 Now we're looking at some meat and potatoes apps that I would genuinely miss. I was surprised to find that if I were to delete every single 3rd party app on my phone I would still feel like I had a very useful, dare I say magical, device.
 
@@ -49,26 +49,26 @@ Along with the others mentioned above, I truly do use every single one of these 
 
 **What 3rd party apps do I genuinely use on a daily basis?**
 
- 	Habitica (todo list)
- 	Trello (project planning)
- 	Bear Writer (all my personal notes)
- 	Slack (work and side project communication)
- 	Recycle Coach (because holidays muck up the pickup schedules)
- 	Clue (reproductive systems are weird)
- 	LastPass (login all the things)
- 	Threes (game as fidget spinner?)
- 	myNoise (meditation and focus)
- 	Workouts For Women (7 minute stretches)
- 	Duolino (Sprichst du Deutsch?)
+- Habitica (todo list)
+- Trello (project planning)
+- Bear Writer (all my personal notes)
+- Slack (work and side project communication)
+- Recycle Coach (because holidays muck up the pickup schedules)
+- Clue (reproductive systems are weird)
+- LastPass (login all the things)
+- Threes (game as fidget spinner?)
+- myNoise (meditation and focus)
+- Workouts For Women (7 minute stretches)
+- Duolino (Sprichst du Deutsch?)
 
 Yes, for the most part I don't need to have 24/7 access to these things. When I'm out of the house some of them won't get any use or they're only touched a couple times a month or when a spontaneous question or thought comes up. They wouldn't get replaced. See caveat two below.
 
 **What would be highly inconvenient to go without when I'm out of the house?**
 
- 	Bank and Car Insurance apps
- 	Take out ordering apps
- 	Additional GPS tools
- 	Goodreads (I track stuff I want to buy when going to the bookstore is possible again)
+- Bank and Car Insurance apps
+- Take out ordering apps
+- Additional GPS tools
+- Goodreads (I track stuff I want to buy when going to the bookstore is possible again)
 
 I won't keep listing all the apps in detail. We're into truly utilitarian territory here. But this is the stuff that makes the difference between having a smart phone and a simple phone. These are the "hey I have the tool, might as well use it to its full advantage" apps.
 

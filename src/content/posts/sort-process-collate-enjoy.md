@@ -8,10 +8,10 @@ categories:
 
 The sorting and cataloging of my stuff has begun. We've got to bring everything home from the storage unit (aka stuff I haven't seen in 3 years) and I want to have the things currently in the house organized while it's still manageable.
 
- 	I have a LOT of reusable bags, backpacks and totebags. &#x1f62e;
- 	I have a lot of tschotches, which make my space feel personal and cozy, but I'm not ready to display yet.
- 	I have so, so many bits of paper ephemera and journals and notebooks
- 	We're not even gonna talk about all my computer bits and bobs
+- I have a LOT of reusable bags, backpacks and totebags.
+- I have a lot of tschotches, which make my space feel personal and cozy, but I'm not ready to display yet.
+- I have so, so many bits of paper ephemera and journals and notebooks
+- We're not even gonna talk about all my computer bits and bobs
 
 There's a lot more to come home from the storage unit. Mostly books, which have a clear place to go, but also toys from when I was a kid and some other things that...frankly, I don't even remember what because it's been too long.
 

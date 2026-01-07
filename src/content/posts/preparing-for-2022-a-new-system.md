@@ -26,15 +26,15 @@ An example quarterly retro question that incorporates failure as a possibility:
 
 If the answer is yes:
 
-    Do your goals still have momentum?
-    Do you want to change anything?
-    Does the next quarter have space for this?
+- Do your goals still have momentum?
+- Do you want to change anything?
+- Does the next quarter have space for this?
 
 If the answer is no:
 
-    What did you focus on instead?
-    Was it of use?
-    What goal did this apply to, if any? If it didn't, is there a need for a new goal?
+- What did you focus on instead?
+- Was it of use?
+- What goal did this apply to, if any? If it didn't, is there a need for a new goal?
 
 Value-based and sustainable goal setting
 
@@ -48,25 +48,25 @@ I also made a list of my particular interests, things that are always with me th
 The new setup
 There are a few tools I'll be using to manage this system in the coming year:
 
-    Habitica and Trello integrated with Zapier to manage my daily tasks, task inbox, and nitty gritty planning. This gets reviewed and cleaned up weekly.
-    Obsidian as my digital notebook (dev journal, commonplace book, monthly summaries). This holds the majority of my daily thoughts, achievements, notes, etc.
-    A paper list of my values, hobbies and interests, pinned somewhere visible (this is also stored in my commonplace book to have it at hand)
-    A paper weekly focus journal based on PEMS (practical, emotional, mental, spiritual) plus project specific intentions with a post-week reflection.
-    A yearly calendar for mapping out holidays, vacations, and [LSQ](http://lunastationquarterly.com/) planning.
+- Habitica and Trello integrated with Zapier to manage my daily tasks, task inbox, and nitty gritty planning. This gets reviewed and cleaned up weekly.
+- Obsidian as my digital notebook (dev journal, commonplace book, monthly summaries). This holds the majority of my daily thoughts, achievements, notes, etc.
+- A paper list of my values, hobbies and interests, pinned somewhere visible (this is also stored in my commonplace book to have it at hand)
+- A paper weekly focus journal based on PEMS (practical, emotional, mental, spiritual) plus project specific intentions with a post-week reflection.
+- A yearly calendar for mapping out holidays, vacations, and [LSQ](http://lunastationquarterly.com/) planning.
 
 Once a quarter, I'll be sitting down to review my progress and plan the next block. The first quarterly review will use the following:
 
-    A large pad to mind-map and scribble notes
-    Printed copies of the monthly summaries
-    My values, hobbies, interests lists
+- A large pad to mind-map and scribble notes
+- Printed copies of the monthly summaries
+- My values, hobbies, interests lists
 
 I'll ask myself a few questions:
 
-    Are my values, interests, and hobbies still of use? Do they enrich my life?
-    Do I need to change anything about those lists? You can add or subtract, both are fine!
-    Is the work I'm doing still in line with my values and interests?
-    What progress have I made on my annual and ongoing goals? Are these goals still valid?
-    Did I get off track anywhere? If I did, do I need to change something or do I just need to lay new track elsewhere?
+- Are my values, interests, and hobbies still of use? Do they enrich my life?
+- Do I need to change anything about those lists? You can add or subtract, both are fine!
+- Is the work I'm doing still in line with my values and interests?
+- What progress have I made on my annual and ongoing goals? Are these goals still valid?
+- Did I get off track anywhere? If I did, do I need to change something or do I just need to lay new track elsewhere?
 
 Asking these questions will ensure the work I'm doing is in alignment with what and how I want to work as well as what I want to work on, providing me the best chance of having the energy and focus I need to do good work. I accept that things may change and this cadence allows me to adapt and update my own expectations for myself.
 Conclusion

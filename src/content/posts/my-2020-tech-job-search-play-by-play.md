@@ -14,9 +14,9 @@ In short, I would not have gotten through that without Trello, a calendar app, a
 
 The pluses of all that work though was that:
 
- 	I was in demand for the first time in my life.
- 	I got to see a ton of different interview styles and patterns.
- 	I learned that I really prefer take home challenges and panel style interviews over pairing/whiteboards and a string of single person interviews.
+- I was in demand for the first time in my life.
+- I got to see a ton of different interview styles and patterns.
+- I learned that I really prefer take home challenges and panel style interviews over pairing/whiteboards and a string of single person interviews.
 
 I was rejected most of the time, mostly because I wasn't up to snuff on algorithms. On the other hand, I actually rejected a few companies for the first time in my life. I got to learn about a lot of different industries and company structures. I also got to interview with Disney, but wasn't upset about that rejection. It was a bad skill fit.
 
