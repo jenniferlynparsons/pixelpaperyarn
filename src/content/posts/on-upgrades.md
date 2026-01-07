@@ -1,11 +1,9 @@
 ---
 title: On Upgrades
-date: "2019-11-07 11:02:45"
+date: "2019-11-07"
 slug: on-upgrades
 categories:
   - Humane Technology
-wp_id: 316
-original_url: http://pixelpaperyarn.rocks/2019/11/07/on-upgrades/
 ---
 
 I've got my 2015 Macbook Pro set up next to my beloved Weathertop (running Linux for programming and Windows for gaming). It's running iTunes and Tiny Desk concerts and basically acting like a media center right now. I also write all of my fiction on there and use it to run almost every aspect of Luna Station Quarterly.

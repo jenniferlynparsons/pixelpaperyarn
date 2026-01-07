@@ -1,11 +1,9 @@
 ---
 title: A reclamation of that which I am not done with yet
-date: "2021-08-16 14:41:11"
+date: "2021-08-16"
 slug: a-reclamation-of-that-which-i-am-not-done-with-yet
 categories:
   - Process
-wp_id: 424
-original_url: http://pixelpaperyarn.rocks/2021/08/16/a-reclamation-of-that-which-i-am-not-done-with-yet/
 ---
 
 As I think about writing zines again and creating a few games, I find myself thinking about visual language. I used to have a very defined graphic style, but I haven't done much creative design work over the last decade. While there have been book covers and typography work, not much that was purely creative, bordering on art.
@@ -16,8 +14,10 @@ Part of me considered looking around and seeing what the kids are up to these da
 
 I might do some exercises, play with things a bit, and see if I can find all my old photoshop brushes and textures, etc. I want to see if I can reclaim this style, in particular:
 
+![](/assets/uploads/002-1024x768-1.jpg)
+
 It's not what you see much anymore in today's world, obsessed as designers nowadays are with minimalism. It's still holding onto a piece of the early aughts grunginess, with my own spin on what feels "right".
 
-I opened up (https://dribbble.com/jenniferlynparsons) for the first time in eons and I am pleasantly surprised by the work I found there. It may not be the cream of the crop, but I can see what I was reaching for at the time. I still find my voice in there.
+I opened up [my Dribbble account](https://dribbble.com/jenniferlynparsons) for the first time in eons and I am pleasantly surprised by the work I found there. It may not be the cream of the crop, but I can see what I was reaching for at the time. I still find my voice in there.
 
 I look forward to reclaiming this kind of work, reclaiming my visual voice, and seeing what I have left in the tank. I suspect it's still quite full and that does make my heart happy.

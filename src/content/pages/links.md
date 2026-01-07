@@ -3,7 +3,6 @@ title: Links
 date: "2018-08-26 21:06:44"
 slug: links
 wp_id: 61
-original_url: http://pixelpaperyarn.rocks/links/
 ---
 
 Other places you can find me

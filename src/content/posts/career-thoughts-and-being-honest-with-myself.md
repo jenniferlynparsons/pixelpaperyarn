@@ -1,11 +1,9 @@
 ---
 title: Career thoughts and being honest with myself
-date: "2018-08-30 14:42:22"
+date: "2018-08-30"
 slug: career-thoughts-and-being-honest-with-myself
 categories:
   - Process
-wp_id: 86
-original_url: http://pixelpaperyarn.rocks/2018/08/30/career-thoughts-and-being-honest-with-myself/
 ---
 
 I seem to persistently waffle on my career. Yesterday it all felt so clear. A path from Individual Contributor to Tech Lead to Engineering Manager. Do it with Rails and JS. Be there in the next five years. I already have 8 years in the industry, this isn't unreasonable.

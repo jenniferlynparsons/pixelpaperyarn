@@ -3,7 +3,6 @@ title: The Canon of Devastation & Delight
 date: "2018-10-12 23:49:33"
 slug: the-canon-of-devastation-delight
 wp_id: 208
-original_url: http://pixelpaperyarn.rocks/the-canon-of-devastation-delight/
 ---
 
 There is a shelf in my bedroom separate from the four bookcases that line the wall. On it there is a pile of books set aside. They are all single volumes, not part of any particular series. And though a few do have sequels, they all stand perfectly well on their own. When combined, they form the "Canon of Devestation and Delight".

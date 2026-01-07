@@ -1,11 +1,9 @@
 ---
 title: Managing Slack
-date: "2021-11-08 10:32:47"
+date: "2021-11-08"
 slug: managing-slack
 categories:
   - Humane Technology
-wp_id: 439
-original_url: http://pixelpaperyarn.rocks/2021/11/08/managing-slack/
 ---
 
 My work slack is very active, partly of the result of having both a healthy remote-working environment and partly because I work with awesome people. Recently, I've been trying to manage the level of attention Slack takes up in my day, because folks are chatty and my brain wants to keep up with everything. I've tried a couple things to manage the drain on my attention, with mixed success and finally found a good solution last week.

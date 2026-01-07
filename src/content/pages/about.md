@@ -3,7 +3,6 @@ title: About Me
 date: "2018-08-26 20:31:03"
 slug: about
 wp_id: 9
-original_url: http://pixelpaperyarn.rocks/about/
 ---
 
 coder. writer. wool wrangler. comic geek. tea snob. pagan. vegetarian. queer.

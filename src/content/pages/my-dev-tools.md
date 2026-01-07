@@ -3,7 +3,6 @@ title: My Dev Tools
 date: "2018-10-12 23:59:12"
 slug: my-dev-tools
 wp_id: 214
-original_url: http://pixelpaperyarn.rocks/my-dev-tools/
 ---
 
 General Installs

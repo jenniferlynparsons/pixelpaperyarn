@@ -1,14 +1,12 @@
 ---
 title: The tea cabinet
-date: "2018-09-15 17:41:53"
+date: "2018-09-15"
 slug: the-tea-cabinet
 categories:
   - Tea
-wp_id: 155
-original_url: http://pixelpaperyarn.rocks/2018/09/15/the-tea-cabinet/
 ---
 
-[](http://pixelpaperyarn.rocks/wp-content/uploads/2018/09/IMG_6087-e1537047118159.jpg)I organized my tea this morning and figured I'd give a little tour. (Click the image for a bigger view)
+[![](/assets/uploads/IMG_6087-e1537047118159.jpg)](/assets/uploads/IMG_6087-e1537047118159.jpg)I organized my tea this morning and figured I'd give a little tour. (Click the image for a bigger view)
 
 I love tea. Even when you make a basic cup with a bag, there's still a little ritual around it, something that soothes me and smooths out the rough edges of my day. I also love the subtle (and not so subtle) variations in flavor available in tea, especially when you throw herbal tisanes into the mix. Even without that, the flavors of tea range from light and sweet to dark and earthy or smoky and I find each of them interesting.
 

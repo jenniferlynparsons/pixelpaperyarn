@@ -1,16 +1,14 @@
 ---
 title: Foundations of decay
-date: "2022-05-16 13:36:46"
+date: "2022-05-16"
 slug: foundations-of-decay
 categories:
   - Music
-wp_id: 463
-original_url: http://pixelpaperyarn.rocks/2022/05/16/foundations-of-decay/
 ---
 
 Huh. I've listened to MCR's new "Foundations of Decay" enough times now that yeah, I pretty much love it.
 
-I don't know what the song is actually about, but I do know that it's resonating with me and there's (https://genius.com/My-chemical-romance-the-foundations-of-decay-lyrics) that feel particularly relevant.
+I don't know what the song is actually about, but I do know that it's resonating with me and there's [a few lyrics](https://genius.com/My-chemical-romance-the-foundations-of-decay-lyrics) that feel particularly relevant.
 
 It's been giving me thoughts about how there's a perception that being in your 40s means you have nothing left in the tank, well. Fuck that.
 

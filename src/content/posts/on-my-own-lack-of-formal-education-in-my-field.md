@@ -1,12 +1,10 @@
 ---
 title: On my own lack of formal education in my field
-date: "2022-05-16 13:38:58"
+date: "2022-05-16"
 slug: on-my-own-lack-of-formal-education-in-my-field
 categories:
   - On Software
   - Personal
-wp_id: 465
-original_url: http://pixelpaperyarn.rocks/2022/05/16/on-my-own-lack-of-formal-education-in-my-field/
 ---
 
 I wonder if it will ever stop feeling strange to review resumes for people that have their comp-sci Bachelors and Masters degrees.

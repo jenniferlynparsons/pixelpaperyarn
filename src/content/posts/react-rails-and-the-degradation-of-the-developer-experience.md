@@ -1,11 +1,9 @@
 ---
 title: React, Rails, and the degradation of the developer experience
-date: "2018-10-23 14:30:42"
+date: "2018-10-23"
 slug: react-rails-and-the-degradation-of-the-developer-experience
 categories:
   - On Software
-wp_id: 220
-original_url: http://pixelpaperyarn.rocks/2018/10/23/react-rails-and-the-degradation-of-the-developer-experience/
 ---
 
 The web development field is a mess. Tutorials only 6 months old are out of date. I'm dependent on stack overflow for answers to everything. I spend more time fighting config files and setups than I do writing code.

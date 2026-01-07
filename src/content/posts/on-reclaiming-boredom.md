@@ -1,11 +1,9 @@
 ---
 title: On reclaiming boredom
-date: "2021-03-22 12:26:20"
+date: "2021-03-22"
 slug: on-reclaiming-boredom
 categories:
   - Humane Technology
-wp_id: 393
-original_url: http://pixelpaperyarn.rocks/2021/03/22/on-reclaiming-boredom/
 ---
 
 I am starting a challenging experiment: seeking ways to reclaim my brain and creativity from the attention economy. I'm not overly tied to my phone. I'm not on facebook and the only reason I have a twitter account is viewing things other people send me, yet I still see the effects. Youtube is a rabbit hole I have trouble escaping and I compulsively check email even when there's zero urgency to do so. My morning and bedtime habits are where I really get stuck.

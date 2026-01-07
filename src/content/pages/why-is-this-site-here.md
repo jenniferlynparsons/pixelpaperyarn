@@ -9,7 +9,6 @@ tags:
   - meta
   - process
 wp_id: 69
-original_url: http://pixelpaperyarn.rocks/2018/08/26/why-is-this-site-here/
 ---
 
 Weblog. Remember that word? It's a bit old, at least in internet terms. It used to refer to a place where one would write their thoughts, opinions, or share informative articles on their specialty. Eventually it shortened to "blog", and then Twitter came along and many people forgot about it entirely. This site is here to bring it back, even if it's just for myself.

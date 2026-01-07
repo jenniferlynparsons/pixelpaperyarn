@@ -3,7 +3,6 @@ title: My Mac Software List
 date: "2018-10-12 23:26:16"
 slug: my-mac-software-list
 wp_id: 203
-original_url: http://pixelpaperyarn.rocks/my-mac-software-list/
 ---
 
 Browsers

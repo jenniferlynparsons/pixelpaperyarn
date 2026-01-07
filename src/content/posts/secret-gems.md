@@ -1,11 +1,9 @@
 ---
 title: Secret gems
-date: "2022-05-15 15:25:42"
+date: "2022-05-15"
 slug: secret-gems
 categories:
   - Music
-wp_id: 459
-original_url: http://pixelpaperyarn.rocks/2022/05/15/secret-gems/
 ---
 
 No idea how true this was, but for many years, it seemed that Jeff Buckley's music was this little secret gem. Even long after "Sketches for" came out, his music seemed to remain underground.

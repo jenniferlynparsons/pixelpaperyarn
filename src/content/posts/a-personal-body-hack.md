@@ -1,12 +1,10 @@
 ---
 title: A personal body hack
-date: "2020-01-09 10:44:20"
+date: "2020-01-09"
 slug: a-personal-body-hack
 excerpt: The tl;dr is I did an experiment to find a supplement that truly helped my depression and mental health and it was successful. I have Paul Stamets and mycelium to thank for this new process I'm going through.
 categories:
   - Personal
-wp_id: 332
-original_url: http://pixelpaperyarn.rocks/2020/01/09/a-personal-body-hack/
 ---
 
 We've been doing an experiment on me and my autistic, unfocused brain. Things were getting desperate last year with my depression and general mental health. Some of this was related to where we lived, but many of the symptoms were simply worse versions of what I've been suffering with most of my life.
@@ -25,6 +23,6 @@ It's so foreign to me that it took me a couple weeks to understand and recognize
 
 I'm grateful for the experiment because it means I have confidence I'm not just convincing myself this is working. I'll double down with the fact that the change was so unexpected I never could have imagined it and to me that verifies the efficacy of this supplement for me.
 
-I'm now using (https://hostdefense.com/collections/memory-boost/products/brain-mycobotanicals-mushroom-and-herb-support-for-mental-clarity). As with anything like this, ymmv and see a professional.
+I'm now using [Host Defense](https://hostdefense.com/collections/memory-boost/products/brain-mycobotanicals-mushroom-and-herb-support-for-mental-clarity). As with anything like this, ymmv and see a professional.
 
 Let the relearning begin.

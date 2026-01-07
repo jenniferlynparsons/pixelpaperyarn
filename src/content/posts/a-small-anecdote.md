@@ -1,12 +1,10 @@
 ---
 title: A small anecdote
-date: "2020-08-27 09:08:59"
+date: "2020-08-27"
 slug: a-small-anecdote
 excerpt: Lately I’ve been watching a spider spin her web every morning on my walk. I live on a big enough piece of property that I do my walks here rather than travel because pandemic. Anyway, this spider redoes her web at least once a day (often twice) and I got to thinking. She doesn’t give up on the web just because it got wrecked. She keeps going...
 categories:
   - Personal
-wp_id: 374
-original_url: http://pixelpaperyarn.rocks/2020/08/27/a-small-anecdote/
 ---
 
 Lately I’ve been watching a spider spin her web every morning on my walk. I live on a big enough piece of property that I do my walks here rather than travel because pandemic. Anyway, this spider redoes her web at least once a day (often twice) and I got to thinking. She doesn’t give up on the web just because it got wrecked. She keeps going, each time a chance to rebuild it stronger, or tighter or better connected to the branches or what have you. That in turn got me thinking about how I need to work on my confidence and habits and other things I want to change about how I move through and act on the world.
