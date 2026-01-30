@@ -6,9 +6,9 @@ categories:
   - Music
 ---
 
-## ![](/assets/uploads/IMG_2789-scaled.jpeg)
+![](/assets/uploads/IMG_2789-scaled.jpeg)
 
-## INTRODUCTION
+## Introduction
 
 After watching [an episode of the JHS show](https://www.youtube.com/watch?v=VTzxMWE2l6Y&t=769s) (my current favorite guitar channel) featuring a parlor guitar with a rubber bridge, I fell in love with the sound. The guitar in the video is available for pre-order, however it carries a hefty price tag ($675). However, I have a similar guitar and was inspired to do some work to see if I could DIY my own rubber bridge.
 
@@ -24,7 +24,7 @@ Norma is a late 1960s parlor guitar meant for campfire singalongs and beginners.
 
 The only significant downside to the rubber bridge is that it will wear out over time as the strings vibrate as they press into the rubber. That said, the material was very inexpensive and will only take a few minutes to cut a new bridge as needed.
 
-## REPLACING THE BRIDGE
+## Replacing The Bridge
 
 ### The prep and research
 
@@ -52,14 +52,14 @@ I didn’t want a full 1/8th of height so I cut a strip a bit smaller than that,
 
 This worked as near to perfect as I could hope for! The sound is deadened, but not too much and the action is still high enough to not buzz too much on the frets.
 
-## ![](/assets/uploads/IMG_2790-scaled.jpeg)
+![](/assets/uploads/IMG_2790-scaled.jpeg)
 
-## NEXT STEPS
+## Next Steps
 
 There are still some fixes I want to do.
 
-    - First priority is getting and installing a pickup so I can run the guitar through an amplifier and, most importantly, through my effects pedals.
+- First priority is getting and installing a pickup so I can run the guitar through an amplifier and, most importantly, through my effects pedals.
 
-    - Scrape the fretboard down to remove the factory polyurethane finish. It doesn’t look very nice.
+- Scrape the fretboard down to remove the factory polyurethane finish. It doesn’t look very nice.
 
-    - Replace the tuning pegs. One of them is a little loose and this would improve the way the guitar holds tune.
+- Replace the tuning pegs. One of them is a little loose and this would improve the way the guitar holds tune.

@@ -39,36 +39,36 @@ const categories = Array.from(categoryMap.entries())
     <nav class="main-navigation font-sans md:px-sidebar-h">
       <ul class="nav-menu list-none m-0 p-0">
         <li class="menu-item menu-item-has-children border-t border-gray-200/10">
-          <a href="#" class="block py-3 px-0 no-underline text-base text-gray-800 hover:text-gray-600 transition-colors">Me</a>
+          <a href="#" class="block py-2 px-0 no-underline text-base text-gray-800 hover:text-gray-600 transition-colors">Me</a>
           <button class="dropdown-toggle" aria-expanded="false">
             <span class="screen-reader-text">expand child menu</span>
           </button>
           <ul class="sub-menu list-none ml-3 hidden">
             <li class="border-t border-gray-200/60">
-              <a href="/about" class="block py-3 px-0 no-underline text-base  text-gray-600 hover:text-gray-800 transition-colors">About Me</a>
+              <a href="/about" class="block py-2 px-0 no-underline text-base  text-gray-600 hover:text-gray-800 transition-colors">About Me</a>
             </li>
             <li class="border-t border-gray-200/60">
-              <a href="/links" class="block py-3 px-0 no-underline text-base text-gray-600 hover:text-gray-800 transition-colors">Links</a>
+              <a href="/links" class="block py-2 px-0 no-underline text-base text-gray-600 hover:text-gray-800 transition-colors">Links</a>
             </li>
           </ul>
         </li>
         <li class="menu-item border-t border-gray-200/60">
-          <a href="/projects" class="block py-3 px-0 no-underline text-base text-gray-800 hover:text-gray-600 transition-colors">My Projects Overview</a>
+          <a href="/projects" class="block py-2 px-0 no-underline text-base text-gray-800 hover:text-gray-600 transition-colors">My Projects Overview</a>
         </li>
         <li class="menu-item menu-item-has-children border-t border-gray-200/60">
-          <a href="#" class="block py-3 px-0 no-underline text-base  text-gray-800 hover:text-gray-600 transition-colors">Stuff I Read</a>
+          <a href="#" class="block py-2 px-0 no-underline text-base  text-gray-800 hover:text-gray-600 transition-colors">Stuff I Read</a>
           <button class="dropdown-toggle" aria-expanded="false">
             <span class="screen-reader-text">expand child menu</span>
           </button>
           <ul class="sub-menu list-none ml-3 hidden">
             <li class="border-t border-gray-200/60">
-              <a href="/the-canon-of-devastation-delight" class="block py-3 px-0 no-underline text-base text-gray-600 hover:text-gray-800 transition-colors">The Canon of Devastation &amp; Delight</a>
+              <a href="/the-canon-of-devastation-delight" class="block py-2 px-0 no-underline text-base text-gray-600 hover:text-gray-800 transition-colors">The Canon of Devastation &amp; Delight</a>
             </li>
             <li class="border-t border-gray-200/60">
-              <a href="/blog/comic-books" class="block py-3 px-0 no-underline text-base text-gray-600 hover:text-gray-800 transition-colors">Comic Books</a>
+              <a href="/blog/comic-books" class="block py-2 px-0 no-underline text-base text-gray-600 hover:text-gray-800 transition-colors">Comic Books</a>
             </li>
             <li class="border-t border-gray-200/60">
-              <a href="/newsletters-i-read" class="block py-3 px-0 no-underline text-base text-gray-600 hover:text-gray-800 transition-colors">Newsletters</a>
+              <a href="/newsletters-i-read" class="block py-2 px-0 no-underline text-base text-gray-600 hover:text-gray-800 transition-colors">Newsletters</a>
             </li>
           </ul>
         </li>
@@ -91,7 +91,7 @@ const categories = Array.from(categoryMap.entries())
         <h2 class="widget-title text-gray-800 text-sm uppercase tracking-wider mb-6 font-bold font-sans md:px-sidebar-h">Categories</h2>
         <ul class="list-none m-0 p-0 font-serif md:px-sidebar-h">
           {categories.map(([category, count], index) => (
-            <li class={`cat-item ${index === 0 ? '' : 'border-t border-gray-200/60'} py-3`}>
+            <li class={`cat-item ${index === 0 ? '' : 'border-t border-gray-200/60'} py-1`}>
               <a href={`/categories/${categoryToSlug(category)}`} class="text-base no-underline text-gray-600 hover:text-gray-800 transition-colors leading-relaxed">
                 {category}
               </a>
@@ -111,7 +111,7 @@ const categories = Array.from(categoryMap.entries())
             { href: 'http://lunastationquarterly.com', text: 'Luna Station Quarterly' },
             { href: 'http://lunastationpress.com', text: 'Luna Station Press' }
           ].map((item, index) => (
-            <li class={`menu-item ${index === 0 ? '' : 'border-t border-gray-200/60'} py-3`}>
+            <li class={`menu-item ${index === 0 ? '' : 'border-t border-gray-200/60'} py-1`}>
               <a href={item.href} rel={item.rel} class="text-base no-underline text-gray-600 hover:text-gray-800 transition-colors leading-relaxed">{item.text}</a>
             </li>
           ))}

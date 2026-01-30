@@ -43,5 +43,7 @@ Add the final broth and now’s the time to add the parmesan. Give it another st
 
 **Here’s my little cheat:**
 Standing and stirring for a half hour straight is no fun, unless you want to just chill and drink something nice and relax, that’s cool, too.
+
 If you want to do other things (make a salad to go with it, etc) you can put a whole cup of broth, maybe a bit more, in the pan at a time and just let it simmer, stirring every couple of minutes.
-The texture won’t be /quite/ the same, but it will still come out marvelous.
+
+The texture won’t be *quite* the same, but it will still come out marvelous.

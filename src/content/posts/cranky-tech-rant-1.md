@@ -6,8 +6,6 @@ categories:
   - Humane Technology
 ---
 
-*(#1 because yeah, there will be more)*
-
 I am really tired and a bit angry at people calling themselves "React Developers".
 
 No. Please. You are a JavaScript developer working in React.
