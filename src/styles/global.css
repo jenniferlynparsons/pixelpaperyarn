@@ -57,6 +57,26 @@
     @apply mb-4 leading-relaxed;
   }
 
+  ul, ol {
+    @apply mb-4 ml-6;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  li {
+    @apply mb-2;
+  }
+
+  hr {
+    @apply my-6;
+  }
+
   code, pre {
     @apply font-mono;
   }
