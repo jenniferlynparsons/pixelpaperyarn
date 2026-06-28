@@ -36,9 +36,12 @@ const categories = Array.from(categoryMap.entries())
   </header>
 
   <div class="secondary px-content-v md:px-0 md:py-0">
-    <nav class="main-navigation font-sans md:px-sidebar-h">
-      <ul class="nav-menu list-none m-0 p-0">
-        <li class="menu-item menu-item-has-children border-t border-gray-200/10">
+     <!--<nav class="main-navigation font-sans md:px-sidebar-h">
+     <ul class="nav-menu list-none m-0 p-0">
+        <li class="border-t border-gray-200/60">
+              <a href="/about" class="block py-2 px-0 no-underline text-base  text-gray-600 hover:text-gray-800 transition-colors">About Me</a>
+            </li>
+         <li class="menu-item menu-item-has-children border-t border-gray-200/10">
           <a href="#" class="block py-2 px-0 no-underline text-base text-gray-800 hover:text-gray-600 transition-colors">Me</a>
           <button class="dropdown-toggle" aria-expanded="false">
             <span class="screen-reader-text">expand child menu</span>
@@ -51,11 +54,11 @@ const categories = Array.from(categoryMap.entries())
               <a href="/links" class="block py-2 px-0 no-underline text-base text-gray-600 hover:text-gray-800 transition-colors">Links</a>
             </li>
           </ul>
-        </li>
+        </li> 
         <li class="menu-item border-t border-gray-200/60">
           <a href="/projects" class="block py-2 px-0 no-underline text-base text-gray-800 hover:text-gray-600 transition-colors">My Projects Overview</a>
         </li>
-        <li class="menu-item menu-item-has-children border-t border-gray-200/60">
+         <li class="menu-item menu-item-has-children border-t border-gray-200/60">
           <a href="#" class="block py-2 px-0 no-underline text-base  text-gray-800 hover:text-gray-600 transition-colors">Stuff I Read</a>
           <button class="dropdown-toggle" aria-expanded="false">
             <span class="screen-reader-text">expand child menu</span>
@@ -71,20 +74,40 @@ const categories = Array.from(categoryMap.entries())
               <a href="/newsletters-i-read" class="block py-2 px-0 no-underline text-base text-gray-600 hover:text-gray-800 transition-colors">Newsletters</a>
             </li>
           </ul>
-        </li>
+        </li> 
       </ul>
     </nav>
-
+-->
     <div class="widget-area mt-widget-gap">
       <aside class="widget widget_text mb-widget-gap text-gray-600 font-serif md:px-sidebar-h">
-        <p class="text-base leading-relaxed mb-4">This site is a weblog, a collection of things I've found and observed along the way.</p>
-        <p class="text-base leading-relaxed mb-0">Learn a bit more about why I created it on the <a href="/why-is-this-site-here" class="text-gray-800 hover:text-gray-600 transition-colors">process post</a>.</p>
+        <p class="text-base leading-relaxed mb-4">Hi, I'm JP. This site is my weblog, a collection of things I've found and observed along the way.</p>
+        <p class="text-base leading-relaxed mb-4">I write about my projects, my work (writing, software, leadership, etc), and the things I read, watch, and listen to.</p>
+
       </aside>
 
       <aside class="widget widget_kofi mb-widget-gap md:px-sidebar-h">
-        <h2 class="widget-title text-gray-800 text-sm uppercase tracking-wider mb-6 font-bold font-sans">My Ko-fi button</h2>
-        <p class="text-base leading-relaxed mb-4 text-gray-600 font-serif">Buy me a tea!</p>
+        <!-- <h2 class="widget-title text-gray-800 text-sm uppercase tracking-wider mb-6 font-bold font-sans">My Ko-fi button</h2> -->
+        <p class="text-base leading-relaxed mb-4 text-gray-600 font-serif">If you find value in what I share, consider dropping a tip.</p>
         <a href="https://ko-fi.com/pixelpaperyarn" target="_blank" rel="noopener" class="inline-block bg-[#46B798] text-white px-4 py-2 rounded font-bold hover:opacity-90 transition-opacity text-sm no-underline font-sans">Buy me a tea!</a>
+      </aside>
+      
+      <aside class="widget widget_nav_menu mb-widget-gap">
+        <h2 class="widget-title text-gray-800 text-sm uppercase tracking-wider mb-6 font-bold font-sans md:px-sidebar-h">Other Sites &amp; Projects</h2>
+        <ul class="menu list-none m-0 p-0 font-serif md:px-sidebar-h">
+          {[
+            { href: 'https://quantityofstuff.com', rel: 'me', text: 'My Resume' },
+            { href: 'https://coachingwithjp.com', rel: 'me', text: 'Career Coaching' },
+            { href: 'https://buttondown.email/commonplace', text: 'Newsletter' },
+            { href: 'http://jenniferlynparsons.com', text: 'Books & Zines' },
+            { href: 'http://lunastationquarterly.com', text: 'Luna Station Quarterly' },
+            { href: 'http://lunastationpress.com', text: 'Luna Station Press' },
+            { href: 'http://selfcare.tech', text: 'selfcare.tech' }
+          ].map((item, index) => (
+            <li class={`menu-item ${index === 0 ? '' : 'border-t border-gray-200/60'} py-1`}>
+              <a href={item.href} rel={item.rel} class="text-base no-underline text-gray-600 hover:text-gray-800 transition-colors leading-relaxed">{item.text}</a>
+            </li>
+          ))}
+        </ul>
       </aside>
 
       <aside class="widget widget_categories mb-widget-gap">
