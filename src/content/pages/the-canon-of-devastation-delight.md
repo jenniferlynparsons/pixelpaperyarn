@@ -24,26 +24,27 @@ The title for this pile came to me recently, when I was pondering adding that fi
 It turns out this is very hard to put into words, which is part of what makes them so special. The fact that these books make me feel things that only their companions make me feel is testament to the power of the storytelling within them.
 
 They leave me breathless in some way, make my heart ache and sing. They are well-written, but beyond that they tell stories that I have not read the like of anywhere else. Unique characters, settings, language, and a million other little things set these books apart. They’re the ones that have made me actually cry, the ones that don’t leave me for weeks after, the ones that have settled into my bones and left me irrevocably changed.
+
 Single Volumes
 
- 	"The Last Unicorn" by Peter S. Beagle
- 	"American Gods" by Neil Gaiman
- 	"The Sparrow" by Mary Doria Russell
- 	"Love is a Mixtape" by Rob Sheffield
- 	"Moth and Spark" by Anne Leonard
- 	"The Hero and the Crown" by Robin McKinley
- 	"Constance" by Patricia Clapp
- 	"Elantris" by Brandon Sanderson
- 	"Orlando" by Virginia Woolf
- 	"The Book of Flying" by Keith Miller
- 	"Kings of the Wyld" by Nicholas Eames
+- "The Last Unicorn" by Peter S. Beagle
+- "American Gods" by Neil Gaiman
+- "The Sparrow" by Mary Doria Russell
+- "Love is a Mixtape" by Rob Sheffield
+- "Moth and Spark" by Anne Leonard
+- "The Hero and the Crown" by Robin McKinley
+- "Constance" by Patricia Clapp
+- "Elantris" by Brandon Sanderson
+- "Orlando" by Virginia Woolf
+- "The Book of Flying" by Keith Miller
+- "Kings of the Wyld" by Nicholas Eames
 
 Wayfarers by Becky Chambers
 
- 	"The Long Way to a Small, Angry Planet"
- 	"A Closed and Common Orbit"
+- "The Long Way to a Small, Angry Planet"
+- "A Closed and Common Orbit"
 
 The Kingkiller Chronicles by Patrick Rothfuss
 
- 	"The Name of the Wind"
- 	"A Wise Man's Fear"
+- "The Name of the Wind"
+- "A Wise Man's Fear"
